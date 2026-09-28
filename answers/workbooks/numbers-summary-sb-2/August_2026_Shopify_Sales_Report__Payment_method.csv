@@ -1,0 +1,5 @@
+Payment method,Orders,Gross incl. VAT
+Shopify Payments,58,2900.72
+PayPal Express Checkout,1,99
+Total,59,2999.720000000001
+"Source: Shopify orders export (files/orders_export.csv), August 2026. Built [run date]. Amounts in EUR; prices VAT-inclusive at 19%. Processing fees: n/a (not in export)."

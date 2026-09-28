@@ -1,0 +1,8 @@
+Week (by paid date),Days,Orders,Total order value,Per day
+Aug 1-7,7,10,401.4,57.34
+Aug 8-14,7,10,473.6,67.66
+Aug 15-21,7,13,610.3200000000001,87.19
+Aug 22-28,7,19,1128.7,161.24
+Aug 29-31,3,6,304.8,101.6
+TOTAL,31,58,2918.82,94.16
+"Source: Shopify orders export (orders_export.csv), uploaded file. Built [run date]. Currency EUR; prices include VAT."

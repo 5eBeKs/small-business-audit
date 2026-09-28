@@ -1,0 +1,8 @@
+Week,Orders,Gross sales
+Aug 1–7,13,717.5
+Aug 8–14,20,879.5
+Aug 15–21,14,852.5
+Aug 22–28,14,853.5
+Aug 29–31,6,399
+
+Source: Shopify orders export (orders_export.csv) · built [run date]

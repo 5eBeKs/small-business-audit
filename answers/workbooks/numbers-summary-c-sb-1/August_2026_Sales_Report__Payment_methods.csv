@@ -1,0 +1,6 @@
+Payment method,Orders 2026-08,Net sales (ex VAT)
+Gift card,48,2887.041666666667
+"Gift card, Shopify Payments",36,2059.091666666667
+PayPal Express Checkout,132,6176.55
+Shopify Payments,1339,73993.8
+"Source: Shopify orders export (files/orders_export.csv), rules from store_definitions.json. Built [run date]."

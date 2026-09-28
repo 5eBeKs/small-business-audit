@@ -1,0 +1,15 @@
+Metric,Jun 2026,Jul 2026,Aug 2026,Change vs Jul,% change
+Orders shipped,1339,1468,1555,87,0.05926430517711172
+Gross sales (ex VAT),79457,83389.5,87503.75,4114.25,0.04933774635895406
+Discounts (ex VAT),929.8166666666667,1003.108333333333,997.5666666666668,-5.541666666666515,-0.00552449469565419
+Refunds (ex VAT),1972.183333333333,2952.258333333334,1389.7,-1562.558333333334,-0.5292756110435232
+Net sales (ex VAT),76555,79434.13333333333,85116.48333333334,5682.350000000006,0.07153536850656989
+"Average order value (net, ex VAT)",57.17326362957431,54.11044504995458,54.73728831725617,0.6268432673015809,0.01158451509173287
+Orders with a refund,62,83,45,-38,-0.4578313253012048
+Discount-code orders,163,176,200,24,0.1363636363636364
+"Shipping charged (ex VAT, not in revenue)",2024.375,2373.291666666667,2429.25,55.95833333333303,0.0235783633841885
+"VAT collected (goods + shipping, less refunds)",15710.27567792418,16348.10499687951,17504.39499881891,1156.290001939396,0.07072929872667849
+"Cash taken, inc VAT & shipping, less refunds",94255.75,98082.01000000001,105019.33,6937.319999999978,0.07072979030507202
+"Source: Shopify orders export (files/orders_export.csv), rules from store_definitions.json. Built [run date]."
+Basis: sales counted when shipped; ex VAT at 20%; customer shipping excluded; test orders excluded; partial refunds deduct the amount refunded; refunds sit in the month of the order.
+Net sales = Gross sales - Discounts - Refunds. Product tab ties to Net sales to the penny.

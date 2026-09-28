@@ -1,0 +1,16 @@
+August 2026 sales — Shopify (GBP)
+"Revenue = shipped orders, ex VAT (20%), ex shipping, net of discounts and refunds. Refunds are assigned to the month of the order. Test, voided and not-yet-shipped orders excluded."
+Metric,Aug 2026,Jul 2026,Change vs Jul,% vs Jul,Jun 2026
+Net revenue (ex VAT),85116.48,79434.13,5682.35,0.07153536850656989,76555
+Orders,1555,1468,87,0.05926430517711172,1339
+Average order value (net rev / order),54.74,54.11,0.63,0.01158451509173287,57.17
+Gross sales (ex VAT),87503.75,83389.5,4114.25,0.04933774635895406,79457
+Discounts (ex VAT),-997.5700000000001,-1003.11,5.54,-0.005524494695654303,-929.8200000000001
+Refunds (ex VAT),-1389.7,-2952.26,1562.56,-0.5292756110435232,-1972.18
+"Shipping charged, net of refunds (ex VAT)",2399.62,2300.88,98.75,0.04291845493562232,1991.46
+Output VAT on goods + shipping,17503.22,16347,1156.22,0.0707297903050722,15709.29
+"Customer-paid total, net of refunds (incl VAT)",105019.33,98082.00999999999,6937.32,0.07072979030507233,94255.75
+Orders with a refund,45,83,-38,-0.4578313253012048,62
+Discounted orders,200,176,24,0.1363636363636364,163
+
+"Source: files/orders_export.csv (Shopify, Jun–Aug 2026) + files/store_definitions.json · built [run date]"

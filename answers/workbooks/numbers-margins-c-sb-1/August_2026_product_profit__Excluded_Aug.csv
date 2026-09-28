@@ -1,0 +1,8 @@
+Reason excluded,Orders,Units,Value incl VAT (after discount)
+not shipped (paid / pre-order),69,209,4577.1
+not shipped (partially_refunded / pre-order),1,3,59
+not shipped (refunded),1,1,9
+not shipped (voided),6,28,883.5
+test gateway,4,20,371.6
+test tag,4,24,537.3
+Per store_definitions.json: test orders out; a sale counts only once shipped.

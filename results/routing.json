@@ -1,0 +1,388 @@
+{
+ "plugin": "small-business",
+ "model": "claude-opus-5-5",
+ "prompts": [
+  {
+   "id": "close_books",
+   "prompt": "Close the books for August.",
+   "expected_any_of": [
+    "close-month",
+    "month-end-prep"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "close-month"
+     ],
+     "first": "close-month",
+     "cut": false,
+     "seconds": 14
+    },
+    {
+     "run": 2,
+     "skills": [
+      "close-month"
+     ],
+     "first": "close-month",
+     "cut": false,
+     "seconds": 12
+    },
+    {
+     "run": 3,
+     "skills": [
+      "close-month"
+     ],
+     "first": "close-month",
+     "cut": false,
+     "seconds": 12
+    }
+   ],
+   "right": 3,
+   "same_every_time": true
+  },
+  {
+   "id": "reconcile_payouts",
+   "prompt": "Can you reconcile our August Shopify payouts against QuickBooks?",
+   "expected_any_of": [
+    "month-end-prep",
+    "close-month"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "month-end-prep"
+     ],
+     "first": "month-end-prep",
+     "cut": false,
+     "seconds": 20
+    },
+    {
+     "run": 2,
+     "skills": [
+      "month-end-prep"
+     ],
+     "first": "month-end-prep",
+     "cut": false,
+     "seconds": 17
+    },
+    {
+     "run": 3,
+     "skills": [
+      "month-end-prep"
+     ],
+     "first": "month-end-prep",
+     "cut": false,
+     "seconds": 19
+    }
+   ],
+   "right": 3,
+   "same_every_time": true
+  },
+  {
+   "id": "make_payroll",
+   "prompt": "Will I make payroll next month?",
+   "expected_any_of": [
+    "cash-flow-snapshot",
+    "plan-payroll",
+    "payroll-prep"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "cash-flow-snapshot"
+     ],
+     "first": "cash-flow-snapshot",
+     "cut": false,
+     "seconds": 12
+    },
+    {
+     "run": 2,
+     "skills": [
+      "cash-flow-snapshot"
+     ],
+     "first": "cash-flow-snapshot",
+     "cut": false,
+     "seconds": 13
+    },
+    {
+     "run": 3,
+     "skills": [
+      "cash-flow-snapshot"
+     ],
+     "first": "cash-flow-snapshot",
+     "cut": false,
+     "seconds": 13
+    }
+   ],
+   "right": 3,
+   "same_every_time": true
+  },
+  {
+   "id": "reorder",
+   "prompt": "What should I reorder this week?",
+   "expected_any_of": [
+    "inventory-planner",
+    "restock"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "inventory-planner"
+     ],
+     "first": "inventory-planner",
+     "cut": false,
+     "seconds": 13
+    },
+    {
+     "run": 2,
+     "skills": [
+      "inventory-planner"
+     ],
+     "first": "inventory-planner",
+     "cut": false,
+     "seconds": 13
+    },
+    {
+     "run": 3,
+     "skills": [
+      "inventory-planner"
+     ],
+     "first": "inventory-planner",
+     "cut": false,
+     "seconds": 14
+    }
+   ],
+   "right": 3,
+   "same_every_time": true
+  },
+  {
+   "id": "taxes",
+   "prompt": "Get my documents together for taxes.",
+   "expected_any_of": [
+    "tax-season-organizer",
+    "tax-prep"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "tax-season-organizer"
+     ],
+     "first": "tax-season-organizer",
+     "cut": false,
+     "seconds": 11
+    },
+    {
+     "run": 2,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 16
+    },
+    {
+     "run": 3,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 16
+    }
+   ],
+   "right": 3,
+   "same_every_time": false
+  },
+  {
+   "id": "sales_report",
+   "prompt": "Build me a monthly sales report from our Shopify export.",
+   "expected_any_of": [
+    "report-builder",
+    "report-pack"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "report-builder"
+     ],
+     "first": "report-builder",
+     "cut": false,
+     "seconds": 15
+    },
+    {
+     "run": 2,
+     "skills": [
+      "report-builder"
+     ],
+     "first": "report-builder",
+     "cut": false,
+     "seconds": 11
+    },
+    {
+     "run": 3,
+     "skills": [
+      "report-builder"
+     ],
+     "first": "report-builder",
+     "cut": false,
+     "seconds": 13
+    }
+   ],
+   "right": 3,
+   "same_every_time": true
+  },
+  {
+   "id": "how_are_we_doing",
+   "prompt": "How's the business doing?",
+   "expected_any_of": [
+    "business-pulse",
+    "monday-brief",
+    "growth-pulse"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "business-pulse"
+     ],
+     "first": "business-pulse",
+     "cut": false,
+     "seconds": 9
+    },
+    {
+     "run": 2,
+     "skills": [
+      "business-pulse"
+     ],
+     "first": "business-pulse",
+     "cut": false,
+     "seconds": 9
+    },
+    {
+     "run": 3,
+     "skills": [
+      "business-pulse"
+     ],
+     "first": "business-pulse",
+     "cut": false,
+     "seconds": 9
+    }
+   ],
+   "right": 3,
+   "same_every_time": true
+  },
+  {
+   "id": "who_owes",
+   "prompt": "Who owes me money?",
+   "expected_any_of": [
+    "invoice-chase"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "invoice-chase"
+     ],
+     "first": "invoice-chase",
+     "cut": false,
+     "seconds": 13
+    },
+    {
+     "run": 2,
+     "skills": [
+      "invoice-chase"
+     ],
+     "first": "invoice-chase",
+     "cut": false,
+     "seconds": 10
+    },
+    {
+     "run": 3,
+     "skills": [
+      "invoice-chase"
+     ],
+     "first": "invoice-chase",
+     "cut": false,
+     "seconds": 10
+    }
+   ],
+   "right": 3,
+   "same_every_time": true
+  },
+  {
+   "id": "where_to_start",
+   "prompt": "I don't know where to start.",
+   "expected_any_of": [
+    "smb-router",
+    "smb-onboard"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "smb-router"
+     ],
+     "first": "smb-router",
+     "cut": false,
+     "seconds": 12
+    },
+    {
+     "run": 2,
+     "skills": [
+      "smb-router"
+     ],
+     "first": "smb-router",
+     "cut": false,
+     "seconds": 10
+    },
+    {
+     "run": 3,
+     "skills": [
+      "smb-router"
+     ],
+     "first": "smb-router",
+     "cut": false,
+     "seconds": 10
+    }
+   ],
+   "right": 3,
+   "same_every_time": true
+  },
+  {
+   "id": "unrelated",
+   "prompt": "Write a haiku about coffee.",
+   "expected_any_of": [],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 5
+    },
+    {
+     "run": 2,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 5
+    },
+    {
+     "run": 3,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 6
+    }
+   ],
+   "right": 3,
+   "same_every_time": true
+  }
+ ]
+}

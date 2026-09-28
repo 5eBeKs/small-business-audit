@@ -1,0 +1,16 @@
+Order,Reason excluded,Line items (USD),Order total incl. tax & ship
+#1998,outside August,24,33.19
+#1999,outside August,24,33.19
+#2000,outside August,24,33.19
+#2008,voided / cancelled,40,50.35
+#2011,test order (Bogus Gateway),12,20.32
+#2038,fully refunded,36,46.06
+#2044,test order (Bogus Gateway),48,58.93
+Source: files/orders_export.csv (Shopify export) + files/cogs.csv · built [run date]
+Method notes
+"Revenue = line price x qty, before sales tax (prices exclude tax, per owner). Shipping and tax columns are not product revenue."
+"Order-level discounts (SUMMER5 on #2020, #2033) allocated to lines pro rata by line value."
+Partial refund on #2049 (USD 12.00 incl. tax) converted to ex-tax and allocated pro rata; the export does not say which item was refunded.
+"cogs.csv row 'mo-cnd-001 ' (lowercase, trailing space) matched to MO-CND-001 Cedar Candle. Without that fix Cedar Candle shows no cost at all."
+"#2038 was fully refunded after fulfilment; if the goods were not returned, that is USD 12.20 of cost (Cedar Candle + Match Cloche) not counted here."
+"Not included (no data): payment processing fees, shipping label cost, packaging. Gross profit here is before those."

@@ -1,0 +1,7 @@
+"Payment method (customer-paid incl VAT + shipping, net of refunds)",Jun 2026,Jul 2026,Aug 2026
+Gift card,2037.8,2589.66,3547.4
+"Gift card, Shopify Payments",1689.95,1717.3,2545.96
+PayPal Express Checkout,9327.82,6434.51,7680.46
+Shopify Payments,81200.18000000001,87340.53999999999,91245.50999999999
+Total,94255.75,98082.00999999999,105019.33
+"Source: files/orders_export.csv (Shopify, Jun–Aug 2026) + files/store_definitions.json · built [run date]"

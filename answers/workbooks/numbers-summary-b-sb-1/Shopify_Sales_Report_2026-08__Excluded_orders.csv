@@ -1,0 +1,8 @@
+Order,Created,Status,Payment method,Total,Why excluded
+#1998,2026-07-31 19:15:00 -0400,paid,Shopify Payments,33.19,Outside period (created 2026-07-31)
+#1999,2026-07-31 20:15:00 -0400,paid,Shopify Payments,33.19,Outside period (created 2026-07-31)
+#2000,2026-07-31 21:15:00 -0400,paid,Shopify Payments,33.19,Outside period (created 2026-07-31)
+#2008,2026-08-28 14:02:00 -0400,voided,Shopify Payments,50.35,Voided / cancelled
+#2011,2026-08-11 15:40:00 -0400,paid,Bogus Gateway (for testing),20.32,Test order (Bogus Gateway)
+#2044,2026-08-15 20:59:00 -0400,paid,Bogus Gateway (for testing),58.93,Test order (Bogus Gateway)
+Source: Shopify orders export (files/orders_export.csv); pulled [run date]

@@ -1,0 +1,288 @@
+{
+ "plugin": "small-business",
+ "model": "claude-opus-5-5",
+ "set": "tax",
+ "prompts": [
+  {
+   "id": "taxes",
+   "prompt": "Get my documents together for taxes.",
+   "expected_any_of": [
+    "tax-prep"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 18
+    },
+    {
+     "run": 2,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 15
+    },
+    {
+     "run": 3,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 17
+    },
+    {
+     "run": 4,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 16
+    },
+    {
+     "run": 5,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 17
+    }
+   ],
+   "right": 5,
+   "same_every_time": true
+  },
+  {
+   "id": "quarterly",
+   "prompt": "How much should I set aside for quarterly taxes?",
+   "expected_any_of": [
+    "tax-prep"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 29
+    },
+    {
+     "run": 2,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 14
+    },
+    {
+     "run": 3,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 16
+    },
+    {
+     "run": 4,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 14
+    },
+    {
+     "run": 5,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 16
+    }
+   ],
+   "right": 5,
+   "same_every_time": true
+  },
+  {
+   "id": "1099s",
+   "prompt": "Can you do our 1099s?",
+   "expected_any_of": [
+    "tax-prep"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 15
+    },
+    {
+     "run": 2,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 17
+    },
+    {
+     "run": 3,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 16
+    },
+    {
+     "run": 4,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 18
+    },
+    {
+     "run": 5,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 17
+    }
+   ],
+   "right": 5,
+   "same_every_time": true
+  },
+  {
+   "id": "accountant",
+   "prompt": "Get my books ready for my accountant for tax season.",
+   "expected_any_of": [
+    "tax-prep"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 17
+    },
+    {
+     "run": 2,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 15
+    },
+    {
+     "run": 3,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 13
+    },
+    {
+     "run": 4,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 16
+    },
+    {
+     "run": 5,
+     "skills": [
+      "tax-prep"
+     ],
+     "first": "tax-prep",
+     "cut": false,
+     "seconds": 15
+    }
+   ],
+   "right": 5,
+   "same_every_time": true
+  },
+  {
+   "id": "closed",
+   "prompt": "The books are closed for Q3. Run the quarterly estimate off the closed numbers.",
+   "expected_any_of": [
+    "tax-season-organizer",
+    "tax-prep"
+   ],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [
+      "tax-season-organizer"
+     ],
+     "first": "tax-season-organizer",
+     "cut": false,
+     "seconds": 16
+    },
+    {
+     "run": 2,
+     "skills": [
+      "tax-season-organizer"
+     ],
+     "first": "tax-season-organizer",
+     "cut": false,
+     "seconds": 23
+    },
+    {
+     "run": 3,
+     "skills": [
+      "tax-season-organizer"
+     ],
+     "first": "tax-season-organizer",
+     "cut": false,
+     "seconds": 17
+    },
+    {
+     "run": 4,
+     "skills": [
+      "tax-season-organizer"
+     ],
+     "first": "tax-season-organizer",
+     "cut": false,
+     "seconds": 15
+    },
+    {
+     "run": 5,
+     "skills": [
+      "tax-season-organizer"
+     ],
+     "first": "tax-season-organizer",
+     "cut": false,
+     "seconds": 18
+    }
+   ],
+   "right": 5,
+   "same_every_time": true
+  }
+ ]
+}

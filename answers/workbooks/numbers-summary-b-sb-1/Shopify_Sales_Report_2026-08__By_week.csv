@@ -1,0 +1,7 @@
+Week,Orders,Merchandise sales,Total billed
+Aug 1–7,13,717.5,816.33
+Aug 8–14,20,879.5,1027.34
+Aug 15–21,14,852.5,959.03
+Aug 22–28,14,853.5,960.1
+Aug 29–end,6,399,442.83
+Source: Shopify orders export (files/orders_export.csv); pulled [run date]

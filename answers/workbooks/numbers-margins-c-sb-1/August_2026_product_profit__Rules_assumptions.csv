@@ -1,0 +1,11 @@
+Rule
+Month = order Created at date (all timestamps +01:00); refunds belong to the order month
+"Revenue = line price × qty, less order discount spread pro rata by line value, less refunds, ÷ 1.20 (prices include 20% VAT)"
+Shipping charged to customers is kept out of revenue; the shipping part of refunds is kept out too
+"Partial refunds: amount only, spread across the order lines by value (the export has no line-level refund detail)"
+"Full refunds on shipped orders: revenue zeroed, COGS kept (goods assumed not resaleable); no loss-maker had a refund in August"
+"Excluded: orders tagged test, orders paid via ""Bogus Gateway (for testing)"" (4 untagged August orders), unshipped orders (pre-orders, voided, refunded before shipping)"
+"SKU matching ignores case and spaces (cogs.csv has ""gl-ser-030"" and ""GL-MST-050 "")"
+"GL-NEW-001 Peptide Serum has no cost in cogs.csv: profit left blank, not estimated"
+"Profit = product gross profit only: excludes payment fees, postage, packaging, ads and overheads"
+Policy answers from files/store_definitions.json

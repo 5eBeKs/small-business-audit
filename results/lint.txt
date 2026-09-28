@@ -1,0 +1,8 @@
+My linter's errors and overlaps, as it prints them. E03 (a 'version' field in a skill's frontmatter) is my linter's rule; the official validator accepts the field, so it is not a defect of the plugin. The style warnings (W01, W03, W05) are my house rules and are left out.
+
+inventory-planner: W04 description overlaps 60% with 'restock': Claude may pick the wrong skill
+invoice-chase: E03 unknown frontmatter field 'version'
+lead-triage: E03 unknown frontmatter field 'version'
+restock: W04 description overlaps 60% with 'inventory-planner': Claude may pick the wrong skill
+tax-prep: W04 description overlaps 66% with 'tax-season-organizer': Claude may pick the wrong skill
+tax-season-organizer: W04 description overlaps 66% with 'tax-prep': Claude may pick the wrong skill

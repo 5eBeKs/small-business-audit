@@ -1,0 +1,17 @@
+Metric,Value,Notes
+Orders (excl. voided),59,"1 voided order excluded (#1021, EUR 22.90)"
+Item sales incl. VAT,2868.1,Line items before order-level discounts
+Shipping charged,151.9,31 orders paid shipping
+Discounts,-20.28,6 orders used a discount code
+Gross sales incl. VAT,2999.720000000001,Item sales + shipping − discounts
+Refunds,-70.5,Refund dates are not in the export — confirm they fall in this month
+Net sales incl. VAT,2929.220000000001
+VAT charged (19%),478.92,Export Taxes column
+VAT reversed on refunds,-11.26,Calculated: refunds × 19/119
+Net VAT,467.66
+Net revenue excl. VAT,2461.560000000001,Net sales incl. VAT − net VAT
+Average order value (gross),50.84271186440679
+Units sold,139
+Payment processing fees,n/a,Not in the orders export — Shopify Payments payout report + PayPal statement
+Comparison vs prior month,n/a,Export covers this month only
+"Source: Shopify orders export (files/orders_export.csv), August 2026. Built [run date]. Amounts in EUR; prices VAT-inclusive at 19%."

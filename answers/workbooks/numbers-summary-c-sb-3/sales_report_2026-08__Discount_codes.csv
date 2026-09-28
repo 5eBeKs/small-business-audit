@@ -1,0 +1,4 @@
+Code,Orders,Discount ex VAT
+SUMMER10,146,772.5666666666667
+WELCOME5,54,225
+"Source: Shopify orders export (orders_export.csv), rules per store_definitions.json. Built [run date]."

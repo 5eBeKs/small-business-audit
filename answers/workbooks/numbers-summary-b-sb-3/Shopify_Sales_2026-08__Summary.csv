@@ -1,0 +1,15 @@
+Metric,August 2026,Note
+Gross sales,3702,"Item price × quantity, all included orders"
+Discounts,-10,"SUMMER5 code, 2 orders"
+Returns,-48,"Product portion of refunds (1 full, 1 partial)"
+Net sales,3644,Gross − discounts − returns
+Shipping charged,222.4,Net of shipping refunded
+Sales tax collected,281.17,"Net of tax refunded — a liability, not income"
+Total sales,4147.57,Ties to order totals less refunds
+Orders,67,"Real August orders (excludes test, voided, July)"
+Average order value,55.1044776119403,Merchandise after discounts ÷ orders
+Units sold (paid items),174,Excludes free Sample Votives
+Refunds paid out,58.06,Cash returned to customers
+Prior month (July),n/a,Export holds only 3 July orders (Jul 31) — no comparison possible
+
+Source: Shopify orders export (orders_export.csv) · built [run date]

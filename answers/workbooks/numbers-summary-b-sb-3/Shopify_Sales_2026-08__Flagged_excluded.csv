@@ -1,0 +1,14 @@
+Order,Date,Type,Amount,Treatment
+#2020,2026-08-06,Discount,5,Code SUMMER5. Shown in the Discounts line.
+#2033,2026-08-08,Discount,5,Code SUMMER5. Shown in the Discounts line.
+#2038,2026-08-05,Full refund,46.06,"Refunded in full (USD 36.00 product, 6.95 shipping, 3.11 tax). Order counted in gross, reversed in returns."
+#2049,2026-08-24,Partial refund,12,"Export doesn't say what was refunded. Treated as a product return (pre-tax). Check the refund in Shopify admin; if any of it was tax, the tax figure moves."
+#2051,2026-08-19,Gift card tender,120.12,Paid partly by gift card. Counted as a sale (redemption). The gift-card portion won't appear in Shopify Payments payouts; the split isn't in the export.
+#1998,2026-07-31,Excluded,33.19,Created 2026-07-31 — outside 2026-08
+#1999,2026-07-31,Excluded,33.19,Created 2026-07-31 — outside 2026-08
+#2000,2026-07-31,Excluded,33.19,Created 2026-07-31 — outside 2026-08
+#2008,2026-08-28,Excluded,50.35,Voided / cancelled — payment never captured
+#2011,2026-08-11,Excluded,20.32,Test order (Bogus Gateway) — not a real sale
+#2044,2026-08-15,Excluded,58.93,Test order (Bogus Gateway) — not a real sale
+
+Source: Shopify orders export (orders_export.csv) · built [run date]

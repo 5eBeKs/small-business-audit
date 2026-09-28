@@ -1,0 +1,8 @@
+Week (paid date),Orders,Gross incl. VAT,Share
+Aug 1–7,10,401.4,0.1338124891656554
+Aug 8–14,10,473.6,0.1578814022642113
+Aug 15–21,13,610.3199999999999,0.2034589895056871
+Aug 22–28,20,1209.6,0.4032376355126477
+Aug 29–31 (3 days),6,304.8,0.1016094835517981
+Total,59,2999.720000000001,1
+"Source: Shopify orders export (files/orders_export.csv), August 2026. Built [run date]. Amounts in EUR; prices VAT-inclusive at 19%."

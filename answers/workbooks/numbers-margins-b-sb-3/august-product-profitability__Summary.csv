@@ -1,0 +1,9 @@
+Metric,Value,Note
+Products losing money,1,"Sample Votive (MO-SMP-001) — given away at USD 0, costs USD 1.10"
+Loss on losing products,-9.9,"9 units, one per order it shipped with"
+"Product revenue (net, ex tax & shipping)",3644.811188811189,66 valid August orders
+Product COGS,1265.5
+Gross profit,2379.311188811189
+Gross margin,0.6527940860462618
+Lowest-margin paid product,0.6,"Match Cloche, USD 7.20 per unit"
+Source: files/orders_export.csv (Shopify export) + files/cogs.csv · built [run date]

@@ -1,0 +1,12 @@
+Why excluded,Month,Orders,Order value (incl VAT + shipping),"Goods (ex VAT, after discount)"
+pre-order (not shipped),Aug 2026,70,4778.3,3863.416666666667
+test order,Jun 2026,3,125.12,97.68333333333334
+test order,Jul 2026,5,434.95,359.1666666666667
+test order,Aug 2026,8,912.85,757.4166666666667
+unshipped,Jun 2026,3,169.95,138.3333333333333
+unshipped,Jul 2026,4,134.85,102.5
+unshipped,Aug 2026,1,12.95,7.5
+voided/cancelled,Jun 2026,5,306.9,242.5833333333334
+voided/cancelled,Jul 2026,3,264.95,217.5
+voided/cancelled,Aug 2026,6,887.45,736.25
+"Source: files/orders_export.csv (Shopify, Jun–Aug 2026) + files/store_definitions.json · built [run date]"

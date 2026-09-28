@@ -1,0 +1,10 @@
+Metric,Value,Note
+"Products losing money (per unit, before fees)",1,Only the free Sample Votive
+Net product revenue,3644,"Excl. tax, shipping; after discounts & refunds"
+COGS,1265.5,units x unit_cost from cogs.csv
+Gross profit,2378.5
+Gross margin,0.6527167947310648
+Orders included,66,7 excluded — see Exclusions tab
+Shipping charged (not in product revenue),222.4,Shipping cost not in data
+Payment processing fees,n/a,Not in the export
+Source: files/orders_export.csv + files/cogs.csv · built [run date]

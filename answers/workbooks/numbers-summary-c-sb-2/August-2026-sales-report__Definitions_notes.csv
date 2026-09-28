@@ -1,0 +1,13 @@
+Item,How it's treated
+Counted,"Order fulfilled (shipped), not voided, not a test. Month = order created date (UK time, +0100)."
+Test orders,Tagged 'test' OR paid via 'Bogus Gateway (for testing)'. 7 Bogus-gateway orders carried no tag.
+Pre-orders / unshipped,"Paid but unfulfilled — left out until shipped (store policy). Export has no ship date, so shipped orders sit in their order month."
+VAT,"Prices include VAT at 20%; ex-VAT = amount / 1.20. Shopify's Taxes column = Total/6 on every order, confirming the rate."
+Discounts,Export 'Subtotal' is before discount (it equals the line items). Net goods = Subtotal − Discount Amount. Discounts allocated to products pro rata.
+Shipping,"Kept out of revenue; shown separately (ex VAT, net of shipping refunds) because the accountant still needs it."
+Refunds,Amount refunded only (partial = partial). Assigned to the order's month. Applied to goods first; any excess over goods value treated as a shipping refund.
+Refunds — caution,August refunds may still rise: late-August orders can still be refunded in September and would be counted back into August.
+Order #30677,Marked 'refunded' but only GBP 30.00 of GBP 55.00 was refunded — counted as a GBP 30.00 refund.
+Gift cards,Gift-card redemptions are counted as sales (as paid). No gift-card purchases appear in the export.
+Not in this report,"COGS / margin (no cost column), payment processor fees, payouts. Shopify Payments / PayPal settlements should be reconciled separately."
+"Source: files/orders_export.csv (Shopify, Jun–Aug 2026) + files/store_definitions.json · built [run date]"

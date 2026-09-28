@@ -1,0 +1,7 @@
+Order,Reason excluded,Order total (incl VAT),Items
+#1013,Tagged 'test',80.90000000000001,1x Green Tea 100g; 2x Ceramic Cup; 2x Oolong 50g
+#1021,Voided/cancelled (voided),22.9,1x Ceramic Cup
+#1042,"Fully refunded (EUR 60.50); fulfilled, return status unknown",60.5,1x Black Tea 100g; 1x Gift Set
+Data checks
+"All orders: lines tie to subtotal, subtotal - discount + shipping ties to total, taxes = 19% VAT-inclusive of total, all EUR."
+"Source: uploaded files (orders_export.csv, cogs.csv). Built [run date]."

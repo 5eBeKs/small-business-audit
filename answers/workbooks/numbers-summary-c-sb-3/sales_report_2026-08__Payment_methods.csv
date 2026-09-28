@@ -1,0 +1,8 @@
+Payment method,Orders,"Receipts incl. VAT & shipping, net of refunds"
+Shopify Payments,1339,91245.50999999999
+PayPal Express Checkout,132,7680.46
+Gift card,48,3547.4
+"Gift card, Shopify Payments",36,2545.96
+TOTAL,1555,105019.33
+"Source: Shopify orders export (orders_export.csv), rules per store_definitions.json. Built [run date]."
+Gift card redemptions: the gift card liability was booked when the card was sold. Mixed rows are not split in the export.

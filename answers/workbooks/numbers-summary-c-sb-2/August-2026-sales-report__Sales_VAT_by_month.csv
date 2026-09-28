@@ -1,0 +1,10 @@
+Line,Jun 2026,Jul 2026,Aug 2026
+Gross sales (ex VAT),79457,83389.5,87503.75
+Discounts (ex VAT),-929.8166666666667,-1003.108333333333,-997.5666666666667
+Refunds (ex VAT),-1972.183333333333,-2952.258333333334,-1389.7
+Net revenue (ex VAT),76555,79434.13333333333,85116.48333333334
+"Shipping charged, net of refunds (ex VAT)",1991.458333333333,2300.875,2399.625
+Output VAT on goods + shipping,15709.29166666667,16347.00166666667,17503.22166666667
+"Customer-paid total, net of refunds (incl VAT)",94255.75,98082.00999999999,105019.33
+Check: net revenue + shipping + VAT − customer-paid,0,0,0
+"Source: files/orders_export.csv (Shopify, Jun–Aug 2026) + files/store_definitions.json · built [run date]"

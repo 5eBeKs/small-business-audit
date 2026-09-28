@@ -1,0 +1,5 @@
+claude plugin validate --strict, Claude Code 2.1.280
+
+Validating plugin manifest: <local path>
+
+✔ Validation passed

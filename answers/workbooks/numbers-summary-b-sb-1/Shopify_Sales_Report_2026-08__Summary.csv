@@ -1,0 +1,14 @@
+Metric,August 2026,Note
+Orders (2026-08),67,"Excludes: 3 outside period, 2 test order, 1 voided / cancelled"
+Gross merchandise sales,3702,Sum of line items
+Discounts,-10,"SUMMER5 code, 2 orders"
+Net merchandise sales,3692,"Gross less discounts, before refunds"
+Shipping charged,229.35,34 of 67 orders shipped free
+Sales tax collected,284.28,"Liability, not revenue; 7.25% on merchandise + shipping"
+Total billed to customers,4205.63,Net merchandise + shipping + tax
+Refunds,-58.06,"#2038 full (USD 46.06), #2049 partial (USD 12.00)"
+Total billed less refunds,4147.57,Before Shopify Payments fees
+Average order value,62.77059701492537,Total billed / orders
+Payment processing fees,n/a,Not in orders export — pull the Shopify Payments payout report
+Comparison vs July,n/a,Export only contains 3 July orders (Jul 31) — no full prior month
+Source: Shopify orders export (files/orders_export.csv); pulled [run date]

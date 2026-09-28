@@ -1,0 +1,5 @@
+Order,Date,Status,Total (incl VAT),Refunded,Reason,Items
+#1013,2026-08-22,paid,80.90000000000001,0,Tagged 'test',1x Green Tea 100g; 2x Ceramic Cup; 2x Oolong 50g
+#1021,2026-08-16,voided,22.9,0,Voided / cancelled (voided),1x Ceramic Cup
+#1042,2026-08-20,refunded,60.5,60.5,Fully refunded (EUR 60.50),1x Black Tea 100g; 1x Gift Set
+Source: files/orders_export.csv + files/cogs.csv · prices treated as incl. 19% VAT · built [run date]

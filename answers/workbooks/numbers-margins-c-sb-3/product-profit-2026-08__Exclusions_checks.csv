@@ -1,0 +1,22 @@
+Month,Reason,Orders,Lines,Gross incl VAT
+2026-06,cancelled,3,9,171
+2026-06,test order,3,6,125.8
+2026-06,voided,5,9,291.1
+2026-07,cancelled,4,4,123
+2026-07,test order,5,12,431
+2026-07,voided,3,7,261
+2026-08,cancelled,1,1,9
+2026-08,"pre-order, not shipped",70,134,4686.2
+2026-08,test order,8,24,931.6
+2026-08,voided,6,16,883.5
+"Source: files/orders_export.csv + files/cogs.csv (Shopify export, GBP). Built [run date]."
+Data checks
+cogs.csv SKU cleaned,"'gl-ser-030' -> GL-SER-030, 'GL-MST-050 ' -> GL-MST-050"
+SKUs sold with no unit cost,GL-NEW-001 (Peptide Serum 30ml) - profit shown as n/a
+Tie-out Aug net revenue,"product rows GBP 85,129.33 = order level GBP 85,129.33"
+Order #30677 (June),status refunded but refunded amount GBP 30.00 of GBP 55.00 total; treated as the amount refunded
+Rules applied (files/store_definitions.json)
+Revenue,"Line price x qty, less pro-rata order discount, less pro-rata refund share, divided by 1.20 (VAT). Shipping fee excluded."
+Counted,"Orders shipped (fulfilled); month = order created date. Voided, cancelled, unshipped/pre-order and test orders (tag test or Bogus Gateway) excluded."
+Refunds,"Amount only, attributed to the order month. Product cost kept on refunded orders (goods were shipped); see ""GP if refunded goods restocked""."
+Not included,"Payment processing fees, packaging, outbound shipping cost, ad spend - not in the export."

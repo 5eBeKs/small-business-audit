@@ -1,0 +1,10 @@
+Line,Amount,Note
+Merchandise at list price (incl VAT),2726.7,57 included orders
+less discounts (WELCOME10),-20.28,Allocated to lines pro rata to line value
+less partial refunds,-10,Allocated to lines pro rata; goods cost still counted
+,2696.42
+less 19% VAT,-430.52,gross / 1.19
+,2265.9,Ties to Summary total
+Shipping charged (incl VAT) — not in product margin,151.9,Order-level; carrier cost not in export
+Order totals per export,2858.32,
+Source: files/orders_export.csv + files/cogs.csv · prices treated as incl. 19% VAT · built [run date]

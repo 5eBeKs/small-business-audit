@@ -1,0 +1,8 @@
+Order,SKU,Qty,Line gross incl VAT,Reason
+#1013,TEA-GRN-100,1,12.9,tagged 'test'
+#1013,CUP-CER-001,2,36,tagged 'test'
+#1013,TEA-OOL-050,2,32,tagged 'test'
+#1021,CUP-CER-001,1,18,voided / cancelled
+#1042,TEA-BLK-100,1,11.5,fully refunded
+#1042,SET-GFT-001,1,49,fully refunded
+"Source: orders_export.csv (Shopify export), cogs.csv. Pulled [run date]."

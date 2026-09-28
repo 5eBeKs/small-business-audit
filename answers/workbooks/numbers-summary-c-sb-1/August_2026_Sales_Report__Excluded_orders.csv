@@ -1,0 +1,9 @@
+Month,Reason left out,Orders,Order value (inc VAT & shipping)
+2026-06,Cancelled / voided (never shipped),8,476.85
+2026-06,Test order,3,125.12
+2026-07,Cancelled / voided (never shipped),7,399.8
+2026-07,Test order,5,434.95
+2026-08,Cancelled / voided (never shipped),7,900.4
+2026-08,"Pre-order, paid but not shipped",70,4778.3
+2026-08,Test order,8,912.85
+"Source: Shopify orders export (files/orders_export.csv), rules from store_definitions.json. Built [run date]."

@@ -1,0 +1,297 @@
+{
+ "plugin": "small-business",
+ "case": "close-august",
+ "model": "claude-opus-5-5",
+ "arms": {
+  "with": [
+   {
+    "run": 1,
+    "error": null,
+    "seconds": 204,
+    "found": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": true
+    },
+    "found_in_the_answer": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": true
+    },
+    "to_read": {
+     "weekly Klaviyo plan called a duplicate": [
+      "- **Possible duplicate payment:** Northbound Couriers invoice NC-8841 (GBP 418.60) was paid twice, on 12 Aug and 14 Aug. The weekly Klaviyo charges are normal repeats, not duplicates."
+     ],
+     "0.30 difference flagged": [
+      "<div class=\"panel\"><h2>Shopify payout reconciliation</h2><div class=\"scroll\"><table><tr><th>Date</th><th>QBO #</th><th>Ledger</th><th>Shopify net</th><th>Delta</th><th>Status</th><th>Note</th></tr><tr",
+      "<div class=\"panel\"><h2>Flagged items</h2><div class=\"scroll\"><table><tr><th>Category</th><th>Date</th><th>Vendor</th><th>Amount</th><th>Status</th><th>What to do</th></tr><tr><td>Reconciliation</td><t",
+      "<div class=\"panel\"><h2>Open items checklist</h2><ul class=\"check\"><li><input type=checkbox> Payout PO-20260810 (Mon 10 Aug) is in Shopify but has no QuickBooks deposit. Check the bank feed and record/"
+     ],
+     "14.20 coffee asked for a receipt": []
+    },
+    "files_saved": [
+     "close-2026-08/close-2026-08.html",
+     "close-2026-08/close-packet-2026-08-summary.pdf",
+     "close-2026-08/close-packet-2026-08.xlsx"
+    ]
+   },
+   {
+    "run": 2,
+    "error": null,
+    "seconds": 233,
+    "found": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": true
+    },
+    "found_in_the_answer": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": true
+    },
+    "to_read": {
+     "weekly Klaviyo plan called a duplicate": [],
+     "0.30 difference flagged": [
+      "<section class=\"panel\"><h2 class=\"section-title\">Shopify payouts vs QuickBooks deposits</h2><div class=\"table-scroll\"><table><thead><tr><th>Date</th><th>Payout / QBO #</th><th>Ledger</th><th>Shopify</"
+     ],
+     "14.20 coffee asked for a receipt": []
+    },
+    "files_saved": [
+     "close-packet-2026-08/close-2026-08.html",
+     "close-packet-2026-08/close-packet-2026-08-summary.pdf",
+     "close-packet-2026-08/close-packet-2026-08.xlsx"
+    ]
+   },
+   {
+    "run": 3,
+    "error": null,
+    "seconds": 217,
+    "found": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": true
+    },
+    "found_in_the_answer": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": true
+    },
+    "to_read": {
+     "weekly Klaviyo plan called a duplicate": [
+      "<p class=muted>Duplicate scan: same amount, same name, within 5 days. Klaviyo's weekly GBP 45 charges (7 days apart) were checked and are a normal recurring plan. Receipt check: expenses over GBP 25 w"
+     ],
+     "0.30 difference flagged": [
+      "<div class=panel><h2>Shopify payouts vs QuickBooks deposits</h2><table><tr><th>Payout / deposit</th><th class=n>Ledger</th><th class=n>Shopify net</th><th class=n>Delta</th><th>Status</th></tr><tr><td"
+     ],
+     "14.20 coffee asked for a receipt": [
+      "<div class=panel><h2>P&amp;L - as booked vs corrected</h2><table><tr><th>Category</th><th class=n>As booked</th><th class=n>Corrected (pending owner)</th></tr><tr class=b><td>Revenue - Shopify sales</"
+     ]
+    },
+    "files_saved": [
+     "close-2026-08/close-2026-08.html",
+     "close-2026-08/close-packet-2026-08-summary.pdf",
+     "close-2026-08/close-packet-2026-08.xlsx"
+    ]
+   }
+  ],
+  "without": [
+   {
+    "run": 1,
+    "error": null,
+    "seconds": 56,
+    "found": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": true
+    },
+    "found_in_the_answer": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": true
+    },
+    "to_read": {
+     "weekly Klaviyo plan called a duplicate": [
+      "16. **Klaviyo** was charged four times at \u00a345, described as a \"weekly\" plan. Klaviyo usually bills monthly, so it's worth checking this isn't several plans or duplicates."
+     ],
+     "0.30 difference flagged": [
+      "| 4 | **PO-20260806**: QBO has \u00a32,503.51, Shopify has \u00a32,503.81. | +0.30 |"
+     ],
+     "14.20 coffee asked for a receipt": [
+      "- Coffee Hub \u00a314.20",
+      "| Meals | 14.20 |"
+     ]
+    },
+    "files_saved": []
+   },
+   {
+    "run": 2,
+    "error": null,
+    "seconds": 90,
+    "found": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": true
+    },
+    "found_in_the_answer": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": true
+    },
+    "to_read": {
+     "weekly Klaviyo plan called a duplicate": [],
+     "0.30 difference flagged": [
+      "| PO-20260806 | 2,503.81 | 2,503.51 (#1004) | +0.30 | Keying error |"
+     ],
+     "14.20 coffee asked for a receipt": [
+      "- **No receipt attached** (7 items, \u00a31,749.02): Meta Ads \u00a3940, Photo Studio North \u00a3360, the card payment \u00a3212.35, the market stall fee \u00a3120, Amazon \u00a363.48, Office Depot \u00a338.99 and Coffee Hub \u00a314.20.",
+      "Photo Studio North \u00a3360.00 (#1039), Meta Ads \u00a3940.00 (#1040), Market stall fee \u00a3120.00 (#1037), Card payment \u00a3212.35 (#1038), Amazon \u00a363.48 (#1036), Office Depot \u00a338.99 (#1041), Coffee Hub \u00a314.20 (#10",
+      "| Meals | 14.20 | 14.20 |"
+     ]
+    },
+    "files_saved": [
+     "aug_2026_close.md"
+    ]
+   },
+   {
+    "run": 3,
+    "error": null,
+    "seconds": 108,
+    "reports_note": "saved in files/; the run's collector skipped that folder, the file was rebuilt from the session's Write and Edit calls",
+    "found": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": true
+    },
+    "found_in_the_answer": {
+     "payout missing in the books": true,
+     "payout entered 900.00 off": true,
+     "payout entered 0.60 short": true,
+     "payout entered twice": true,
+     "deposit that is no payout": true,
+     "supplier bill keyed twice": true,
+     "uncategorized: Amazon": true,
+     "uncategorized: market stall": true,
+     "uncategorized: card payment 212.35": true,
+     "no receipt: product shoot 360.00": true,
+     "no receipt: Meta ads 940.00": true,
+     "no receipt: printer ink 38.99": false
+    },
+    "to_read": {
+     "weekly Klaviyo plan called a duplicate": [],
+     "0.30 difference flagged": [
+      "| A5 | PO-20260806 keyed 2,503.51 vs 2,503.81 | 2,503.51 | 2,503.81 | +0.30 |",
+      "| + PO-20260806 / 0813 keying errors | 0.90 |"
+     ],
+     "14.20 coffee asked for a receipt": [
+      "- **Possibly missing costs:** there's no payroll (though there's a \"team coffee\" expense), no bank charges, no utilities or insurance, and nothing accrued for August bills that arrive in September.",
+      "| B5 | **No receipt attached**: Photo Studio North \u00a3360.00 (#1039), Meta Ads \u00a3940.00 (#1040), Office Depot \u00a338.99 (#1041), Coffee Hub \u00a314.20 (#1042), plus B2\u2013B4 | 1,749.02 total | Get invoices or rece",
+      "| B7 | Coffee Hub \"Team coffee\" in Meals | 14.20 | For UK tax, this is staff welfare rather than client entertaining. Minor, left as is. |",
+      "- **Possibly missing costs.** The ledger has no payroll (despite \"team\" coffee), no bank charges, no utilities or insurance, no depreciation, no accruals for August costs invoiced in September, and no"
+     ]
+    },
+    "files_saved": [
+     "files/close_aug_2026.md"
+    ]
+   }
+  ]
+ }
+}

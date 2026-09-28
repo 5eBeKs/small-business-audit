@@ -1,0 +1,9 @@
+Order,Reason,Line-item value
+#1998,Outside August (July order),24
+#1999,Outside August (July order),24
+#2000,Outside August (July order),24
+#2008,Voided / cancelled,40
+#2011,Test order (Bogus Gateway),12
+#2038,Fully refunded,36
+#2044,Test order (Bogus Gateway),48
+Source: files/orders_export.csv + files/cogs.csv · built [run date]

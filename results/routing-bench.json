@@ -1,0 +1,277 @@
+{
+ "plugin": "small-business",
+ "model": "claude-opus-5-5",
+ "set": "bench",
+ "prompts": [
+  {
+   "id": "numbers-summary",
+   "prompt": "Hi! Our Shopify orders export for August is in the `files` folder (orders_export.csv). How did the month go? I need the key numbers for my accountant.",
+   "expected_any_of": [],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 75
+    },
+    {
+     "run": 2,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 109
+    },
+    {
+     "run": 3,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 70
+    }
+   ],
+   "right": null,
+   "same_every_time": true
+  },
+  {
+   "id": "numbers-summary-b",
+   "prompt": "Hey, our Shopify orders export for August is in the `files` folder. How did the month go? I need the numbers for my bookkeeper.",
+   "expected_any_of": [],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [],
+     "first": null,
+     "cut": true,
+     "seconds": 240
+    },
+    {
+     "run": 2,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 79
+    },
+    {
+     "run": 3,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 80
+    }
+   ],
+   "right": null,
+   "same_every_time": true
+  },
+  {
+   "id": "numbers-summary-c",
+   "prompt": "Hi! Our Shopify orders export for June to August is in the `files` folder. How did August go? I need the numbers for my accountant.",
+   "expected_any_of": [],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [],
+     "first": null,
+     "cut": true,
+     "seconds": 240
+    },
+    {
+     "run": 2,
+     "skills": [],
+     "first": null,
+     "cut": true,
+     "seconds": 240
+    },
+    {
+     "run": 3,
+     "skills": [],
+     "first": null,
+     "cut": true,
+     "seconds": 240
+    }
+   ],
+   "right": null,
+   "same_every_time": true
+  },
+  {
+   "id": "numbers-payouts",
+   "prompt": "We sold way more in August than landed in our bank. The Shopify orders export and the Shopify Payments payout transactions export are in the `files` folder. Where did the money go?",
+   "expected_any_of": [],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 53
+    },
+    {
+     "run": 2,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 54
+    },
+    {
+     "run": 3,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 48
+    }
+   ],
+   "right": null,
+   "same_every_time": true
+  },
+  {
+   "id": "numbers-payouts-b",
+   "prompt": "Why is our August payout so much lower than what we sold? The orders export and the Shopify Payments payout transactions are in the `files` folder.",
+   "expected_any_of": [],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 58
+    },
+    {
+     "run": 2,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 214
+    },
+    {
+     "run": 3,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 63
+    }
+   ],
+   "right": null,
+   "same_every_time": true
+  },
+  {
+   "id": "numbers-payouts-c",
+   "prompt": "We sold more in August than reached the bank. The Shopify orders export and the Shopify Payments payout transactions, June to August, are in the `files` folder. Where did the money go?",
+   "expected_any_of": [],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [],
+     "first": null,
+     "cut": true,
+     "seconds": 240
+    },
+    {
+     "run": 2,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 235
+    },
+    {
+     "run": 3,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 220
+    }
+   ],
+   "right": null,
+   "same_every_time": true
+  },
+  {
+   "id": "numbers-margins",
+   "prompt": "Which of our products actually lose money? The August orders export and our unit costs (cogs.csv) are in the `files` folder. Prices include 19% VAT.",
+   "expected_any_of": [],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 29
+    },
+    {
+     "run": 2,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 26
+    },
+    {
+     "run": 3,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 29
+    }
+   ],
+   "right": null,
+   "same_every_time": true
+  },
+  {
+   "id": "numbers-margins-b",
+   "prompt": "Which of our products lose money? August orders and our cost sheet (cogs.csv) are in the `files` folder. Our prices do not include sales tax.",
+   "expected_any_of": [],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 44
+    },
+    {
+     "run": 2,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 46
+    },
+    {
+     "run": 3,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 38
+    }
+   ],
+   "right": null,
+   "same_every_time": true
+  },
+  {
+   "id": "numbers-margins-c",
+   "prompt": "Which of our products lost money in August? The orders export (June to August) and our unit costs (cogs.csv) are in the `files` folder. Our prices include 20% VAT.",
+   "expected_any_of": [],
+   "runs": [
+    {
+     "run": 1,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 148
+    },
+    {
+     "run": 2,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 178
+    },
+    {
+     "run": 3,
+     "skills": [],
+     "first": null,
+     "cut": false,
+     "seconds": 150
+    }
+   ],
+   "right": null,
+   "same_every_time": true
+  }
+ ]
+}

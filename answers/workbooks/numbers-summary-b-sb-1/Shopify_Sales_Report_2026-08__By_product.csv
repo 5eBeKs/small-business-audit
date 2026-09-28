@@ -1,0 +1,11 @@
+SKU,Product,Units,Merchandise sales,Orders,Share of sales
+MO-DIF-001,Reed Diffuser,39,1248,24,0.3371150729335494
+MO-CND-001,Cedar Candle 8oz,28,672,22,0.1815235008103728
+MO-CND-002,Fig Candle 8oz,22,528,16,0.1426256077795786
+MO-CND-010,Travel Tin Trio,24,468,18,0.126418152350081
+MO-MAT-001,Match Cloche,34,408,26,0.1102106969205835
+MO-WCK-001,Wick Trimmer,27,378,21,0.1021069692058347
+MO-SMP-001,Sample Votive,9,0,9,0
+Total,183,3702
+
+Source: Shopify orders export (files/orders_export.csv); pulled [run date]

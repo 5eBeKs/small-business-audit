@@ -1,0 +1,4 @@
+Order,Status,Merchandise,Shipping,Tax,Order total,Refunded
+#2038,refunded,36,6.95,3.11,46.06,46.06
+#2049,partially_refunded,136,0,9.859999999999999,145.86,12
+Source: Shopify orders export (files/orders_export.csv); pulled [run date]

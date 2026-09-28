@@ -1,0 +1,28 @@
+SKU,Product,List price incl VAT,List price ex VAT,Unit cost,Profit per unit at list price,Looks profitable incl VAT?
+GL-BAG-001,Wash Bag,15,12.5,4.8,7.7,yes
+GL-BDY-200,Body Lotion 200ml,19,15.83333333333333,4.2,11.63333333333333,yes
+GL-CLN-100,Gentle Cleanser 100ml,14,11.66666666666667,3.1,8.566666666666668,yes
+GL-CLN-250,Gentle Cleanser 250ml,24,20,5.6,14.4,yes
+GL-CLR-001,Summer Tin (clearance),6,5,5.8,-0.7999999999999998,yes
+GL-CLR-002,Old Label Serum (clearance),9.6,8,8.4,-0.4000000000000004,yes
+GL-CND-001,Rose Candle,20,16.66666666666667,5.9,10.76666666666667,yes
+GL-EYE-015,Eye Balm 15ml,22,18.33333333333334,5.1,13.23333333333334,yes
+GL-GFT-001,Starter Gift Box,45,37.5,13.5,24,yes
+GL-GFT-002,Deluxe Gift Box,79,65.83333333333334,24,41.83333333333334,yes
+GL-HND-075,Hand Cream 75ml,11,9.166666666666668,2.3,6.866666666666668,yes
+GL-LIP-004,Lip Balm Trio,12,10,2.7,7.3,yes
+GL-MIN-001,Travel Minis Set,25,20.83333333333334,8.699999999999999,12.13333333333334,yes
+GL-MSK-075,Clay Mask 75ml,18,15,3.8,11.2,yes
+GL-MST-050,Day Moisturiser 50ml,28,23.33333333333334,6.3,17.03333333333333,yes
+GL-MST-051,Night Cream 50ml,30,25,6.9,18.1,yes
+GL-NEW-001,Peptide Serum 30ml,38,31.66666666666667
+GL-OIL-030,Facial Oil 30ml,26,21.66666666666667,6.1,15.56666666666667,yes
+GL-SCR-150,Coffee Scrub 150ml,17,14.16666666666667,3.9,10.26666666666667,yes
+GL-SER-030,Vitamin C Serum 30ml,32,26.66666666666667,7.9,18.76666666666667,yes
+GL-SER-031,Retinol Serum 30ml,36,30,9.199999999999999,20.8,yes
+GL-SMP-001,Sample Sachet,0,0,0.35,-0.35,no
+GL-SOP-100,Oat Soap Bar,7.5,6.25,1.6,4.65,yes
+GL-SPF-050,Mineral SPF 50,21,17.5,5.4,12.1,yes
+GL-TNR-150,Rose Toner 150ml,16,13.33333333333333,3.4,9.933333333333334,yes
+GL-TWL-001,Bamboo Face Towel,9,7.5,2.4,5.1,yes
+"Source: orders_export.csv + cogs.csv (uploaded). Built [run date]. Revenue ex 20% VAT, ex shipping, net of discounts and refunds."

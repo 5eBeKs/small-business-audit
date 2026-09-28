@@ -1,0 +1,5 @@
+Payment method,Orders,Total collected
+"Gift card, Shopify Payments",1,120.12
+Shopify Payments,66,4085.51
+
+#2051 was part-paid by gift card; the split isn't in the export. Source: Shopify orders export (files/orders_export.csv). Built [run date].

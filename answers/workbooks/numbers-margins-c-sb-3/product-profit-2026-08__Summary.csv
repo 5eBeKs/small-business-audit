@@ -1,0 +1,8 @@
+Metric,August 2026,July 2026,Change,Note
+Products at a loss (Aug),3,"Sample Sachet, Summer Tin, Old Label Serum"
+Combined loss on those products,-104.4376243250923
+"Net revenue ex VAT, ex shipping (Aug)",85129.32519065621,79460.14623424888,5669.178956407326
+Product cost (COGS),25128.5,24053.05,1075.450000000001,Excludes Peptide Serum (no unit cost)
+Gross profit (Aug),54443.21099836196,49939.70886743002,4503.502130931942,Excludes Peptide Serum (no unit cost)
+Peptide Serum revenue with no cost on file,5557.614192294254,GL-NEW-001 missing from cogs.csv
+"Source: files/orders_export.csv + files/cogs.csv (Shopify export, GBP). Built [run date]."

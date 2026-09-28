@@ -1,0 +1,1036 @@
+{
+ "plugin": "small-business",
+ "model": "claude-opus-5-5",
+ "reply": "Looks right. Go ahead.",
+ "skill_called_by_name": true,
+ "cases": {
+  "numbers-summary": [
+   {
+    "run": 1,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 193,
+    "score": 1,
+    "graders": [
+     {
+      "name": "net-correct",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-order-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-order-not-counted",
+      "passed": true,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"Order #1013 (EUR 80.90) is tagged test ... I left it out of every figure\"; net collected 2,848.32 from 58 orders"
+     }
+    ],
+    "files_saved": [
+     "August_2026_sales_report.html",
+     "August_2026_sales_report.xlsx",
+     "report-definitions.md"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 2,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 221,
+    "score": 0,
+    "graders": [
+     {
+      "name": "net-correct",
+      "passed": false,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-order-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-order-not-counted",
+      "passed": false,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"Order #1013 (EUR 80.90) is tagged test ... I've counted it\"; the month's figures are 59 orders and 2,999.72 gross"
+     }
+    ],
+    "files_saved": [
+     "August_2026_Shopify_Sales_Report.html",
+     "August_2026_Shopify_Sales_Report.xlsx",
+     "report-definitions.md"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 3,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 153,
+    "score": 1,
+    "graders": [
+     {
+      "name": "net-correct",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-order-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-order-not-counted",
+      "passed": true,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"Order #1013 is tagged test ... I left it out of every figure\"; 2,918.82 across 58 orders"
+     }
+    ],
+    "files_saved": [
+     "files/August-2026-sales-report.html"
+    ],
+    "skill_tool_calls_besides": [],
+    "files_note": "the run saved its page, workbook and script in files/, which the first collector skipped; the page was rebuilt from the session's Write and Edit calls, the workbook and script were not kept"
+   }
+  ],
+  "numbers-summary-b": [
+   {
+    "run": 1,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 176,
+    "score": 1,
+    "graders": [
+     {
+      "name": "net-correct",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-orders-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-orders-not-counted",
+      "passed": true,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"Test orders: #2011 and #2044 (USD 79.25 together) went through the Bogus Gateway\" under Left out of the totals; 4,147.57 across 67 orders"
+     }
+    ],
+    "files_saved": [
+     "report-definitions.md",
+     "Shopify_Sales_Report_2026-08.html",
+     "Shopify_Sales_Report_2026-08.xlsx"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 2,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 178,
+    "score": 1,
+    "graders": [
+     {
+      "name": "net-correct",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-orders-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-orders-not-counted",
+      "passed": true,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"2 test orders (#2011, #2044, paid through Shopify's test gateway). I left all six out.\"; 4,205.63 and 4,147.57 from 67 orders"
+     }
+    ],
+    "files_saved": [
+     "August-2026-Shopify-Sales.html",
+     "August-2026-Shopify-Sales.xlsx",
+     "report-definitions.md"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 3,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 198,
+    "score": 1,
+    "graders": [
+     {
+      "name": "net-correct",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-orders-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "test-orders-not-counted",
+      "passed": true,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"2 test orders (#2011 and #2044, USD 79.25) run through Shopify's test payment option ... I left them out\"; 4,147.57 from 67 orders"
+     }
+    ],
+    "files_saved": [
+     "report-definitions.md",
+     "Shopify_Sales_2026-08.html",
+     "Shopify_Sales_2026-08.xlsx"
+    ],
+    "skill_tool_calls_besides": []
+   }
+  ],
+  "numbers-summary-c": [
+   {
+    "run": 1,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 199,
+    "score": 1,
+    "graders": [
+     {
+      "name": "orders-counted",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "pre-orders-left-out",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "revenue-on-the-owners-definitions",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [
+     "August_2026_Sales_Report.html",
+     "August_2026_Sales_Report.xlsx",
+     "report-definitions.md"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 2,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 322,
+    "score": 1,
+    "graders": [
+     {
+      "name": "orders-counted",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "pre-orders-left-out",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "revenue-on-the-owners-definitions",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [
+     "August-2026-sales-report.html",
+     "August-2026-sales-report.xlsx",
+     "report-definitions.md"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 3,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 211,
+    "score": 0,
+    "graders": [
+     {
+      "name": "orders-counted",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "pre-orders-left-out",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "revenue-on-the-owners-definitions",
+      "passed": false,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [
+     "report-definitions.md",
+     "sales_report_2026-08.html",
+     "sales_report_2026-08.xlsx"
+    ],
+    "skill_tool_calls_besides": []
+   }
+  ],
+  "numbers-payouts": [
+   {
+    "run": 1,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "month-end-prep",
+    "seconds": 51,
+    "score": 1,
+    "graders": [
+     {
+      "name": "bank-figure",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "chargeback",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "euro-not-dollar",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "in-transit",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "paypal-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "refunds",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 2,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "month-end-prep",
+    "seconds": 48,
+    "score": 1,
+    "graders": [
+     {
+      "name": "bank-figure",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "chargeback",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "euro-not-dollar",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "in-transit",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "paypal-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "refunds",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 3,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "month-end-prep",
+    "seconds": 49,
+    "score": 1,
+    "graders": [
+     {
+      "name": "bank-figure",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "chargeback",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "euro-not-dollar",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "in-transit",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "paypal-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "refunds",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [],
+    "skill_tool_calls_besides": []
+   }
+  ],
+  "numbers-payouts-b": [
+   {
+    "run": 1,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "month-end-prep",
+    "seconds": 201,
+    "score": 1,
+    "graders": [
+     {
+      "name": "bank-figure",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "both-disputes",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "dollar-not-euro",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "gift-card-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "in-transit",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "july-orders-paid-in-august",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "refunds",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 2,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "month-end-prep",
+    "seconds": 52,
+    "score": 1,
+    "graders": [
+     {
+      "name": "bank-figure",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "both-disputes",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "dollar-not-euro",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "gift-card-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "in-transit",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "july-orders-paid-in-august",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "refunds",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 3,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "month-end-prep",
+    "seconds": 58,
+    "score": 1,
+    "graders": [
+     {
+      "name": "bank-figure",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "both-disputes",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "dollar-not-euro",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "gift-card-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "in-transit",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "july-orders-paid-in-august",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "refunds",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [],
+    "skill_tool_calls_besides": []
+   }
+  ],
+  "numbers-payouts-c": [
+   {
+    "run": 1,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "month-end-prep",
+    "seconds": 114,
+    "score": 1,
+    "graders": [
+     {
+      "name": "august-disputes",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "bank-figure",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "in-transit",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "july-sales-paid-in-august",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "pounds",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 2,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "month-end-prep",
+    "seconds": 236,
+    "score": 1,
+    "graders": [
+     {
+      "name": "august-disputes",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "bank-figure",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "in-transit",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "july-sales-paid-in-august",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "pounds",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 3,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "month-end-prep",
+    "seconds": 130,
+    "score": 1,
+    "graders": [
+     {
+      "name": "august-disputes",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "bank-figure",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "in-transit",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "july-sales-paid-in-august",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "pounds",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [],
+    "skill_tool_calls_besides": []
+   }
+  ],
+  "numbers-margins": [
+   {
+    "run": 1,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 157,
+    "score": 1,
+    "graders": [
+     {
+      "name": "below-cost-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "gift-set-unknown",
+      "passed": true,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"Gift Set (SET-GFT-001) isn't in cogs.csv ... I didn't guess a cost for it\""
+     }
+    ],
+    "files_saved": [
+     "product_margin_2026-08.html",
+     "product_margin_2026-08.xlsx",
+     "report-definitions.md"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 2,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 156,
+    "score": 1,
+    "graders": [
+     {
+      "name": "below-cost-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "gift-set-unknown",
+      "passed": true,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"I couldn't work out the Gift Set's margin (SET-GFT-001). There's no cost for it in cogs.csv.\""
+     }
+    ],
+    "files_saved": [
+     "product-profitability-2026-08.html",
+     "product-profitability-2026-08.xlsx",
+     "report_template.html"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 3,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 143,
+    "score": 1,
+    "graders": [
+     {
+      "name": "below-cost-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "gift-set-unknown",
+      "passed": true,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"Gift Set: EUR 642.18 net revenue ... Margin is n/a because there's no cost on file\""
+     }
+    ],
+    "files_saved": [
+     "August-2026-product-profitability.html",
+     "August-2026-product-profitability.xlsx"
+    ],
+    "skill_tool_calls_besides": []
+   }
+  ],
+  "numbers-margins-b": [
+   {
+    "run": 1,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 137,
+    "score": 1,
+    "graders": [
+     {
+      "name": "cedar-cost-found",
+      "passed": true,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"Cedar Candle 8oz | 28 | USD 645.88 | USD 207.20 | USD 438.68 | 68%\"; \"I matched it to Cedar Candle anyway\""
+     },
+     {
+      "name": "sample-below-cost",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [
+     "product_profitability_2026-08.html",
+     "product_profitability_2026-08.xlsx"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 2,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 140,
+    "score": 1,
+    "graders": [
+     {
+      "name": "cedar-cost-found",
+      "passed": true,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"Cedar Candle 8oz | 27 | 16.52 | 69.1%\"; \"I matched it to Cedar Candle\""
+     },
+     {
+      "name": "sample-below-cost",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [
+     "August-2026-product-profitability.html",
+     "August-2026-product-profitability.xlsx",
+     "report-definitions.md"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 3,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 149,
+    "score": 1,
+    "graders": [
+     {
+      "name": "cedar-cost-found",
+      "passed": true,
+      "withOnly": false,
+      "scored": true,
+      "to_read": true,
+      "why": "\"Cedar Candle 8oz | 24.00 | 7.40 | 27 | 446.23 | 69%\"; \"I matched it to MO-CND-001 for this report\""
+     },
+     {
+      "name": "sample-below-cost",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [
+     "august-product-profitability.html",
+     "august-product-profitability.xlsx",
+     "report-definitions.md"
+    ],
+    "skill_tool_calls_besides": []
+   }
+  ],
+  "numbers-margins-c": [
+   {
+    "run": 1,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 232,
+    "score": 1,
+    "graders": [
+     {
+      "name": "both-clearance-products",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "unknown-cost-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [
+     "August_2026_product_profit.html",
+     "August_2026_product_profit.xlsx",
+     "report-definitions.md"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 2,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 174,
+    "score": 1,
+    "graders": [
+     {
+      "name": "both-clearance-products",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "unknown-cost-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [
+     "august-product-profitability.html",
+     "august-product-profitability.xlsx",
+     "report-definitions.md"
+    ],
+    "skill_tool_calls_besides": []
+   },
+   {
+    "run": 3,
+    "error": null,
+    "turns": 1,
+    "called_by_name": "report-builder",
+    "seconds": 191,
+    "score": 1,
+    "graders": [
+     {
+      "name": "both-clearance-products",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     },
+     {
+      "name": "unknown-cost-named",
+      "passed": true,
+      "withOnly": false,
+      "scored": true
+     }
+    ],
+    "files_saved": [
+     "product-profit-2026-08.html",
+     "product-profit-2026-08.xlsx"
+    ],
+    "skill_tool_calls_besides": []
+   }
+  ]
+ }
+}

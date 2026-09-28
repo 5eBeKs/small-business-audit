@@ -1,0 +1,13 @@
+Item,Value
+Report,Product profitability - August 2026
+Question,Which products lose money? (net revenue ex 19% VAT minus unit cost)
+"Net product revenue, ex VAT (all products)",2265.899159663866
+"Net product revenue, ex VAT (products with a unit cost)",1623.714285714286
+Gross profit after COGS (products with a unit cost),745.7142857142858
+Gross margin (products with a unit cost),0.4592644729896182
+Products losing money,Steel Strainer (-33.85)
+Products with no unit cost (margin n/a),Gift Set
+Orders counted,57
+Orders excluded,3
+Not deducted (not in files),"payment fees, shipping/fulfilment cost, packaging, ad spend"
+"Source: uploaded files (orders_export.csv, cogs.csv). Built [run date]."

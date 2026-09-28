@@ -1,0 +1,21 @@
+Line,Amount,Note
+Orders (included),67,"Excludes 3 July orders, 1 voided order, 2 test orders — see Exclusions tab"
+Gross product sales,3702,Sum of line items before discounts
+Less: discounts,-10,"SUMMER5 code, 2 orders"
+Net product sales,3692,Revenue before shipping and tax
+Shipping charged to customers,229.35,34 of 67 orders shipped free
+Sales tax collected,284.28,Liability — not revenue
+Total collected at checkout,4205.63,Net product sales + shipping + tax; ties to sum of order totals
+Less: refunds issued,-58.06,#2038 full refund; #2049 partial refund
+Total collected after refunds,4147.57,Before Shopify Payments processing fees (not in this export)
+
+Average order value,55.1044776119403,Net product sales / orders
+Units sold (paid),174,Plus 9 free Sample Votives
+
+Refund breakdown — #2038 product,36,"Full refund, allocation known"
+Refund breakdown — #2038 shipping,6.95
+Refund breakdown — #2038 tax,3.11,Reduces sales tax owed
+Refund — #2049 unallocated,12,Export doesn't say whether this includes tax — check in Shopify admin
+Processing fees,n/a,Not in the orders export — pull the Shopify Payments payout report
+
+Source: Shopify orders export (files/orders_export.csv). Built [run date].

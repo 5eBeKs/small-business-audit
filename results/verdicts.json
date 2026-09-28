@@ -1,0 +1,50 @@
+{
+ "numbers-summary/1/test-order-not-counted": [
+  true,
+  "\"Order #1013 (EUR 80.90) is tagged test ... I left it out of every figure\"; net collected 2,848.32 from 58 orders"
+ ],
+ "numbers-summary-b/1/test-orders-not-counted": [
+  true,
+  "\"Test orders: #2011 and #2044 (USD 79.25 together) went through the Bogus Gateway\" under Left out of the totals; 4,147.57 across 67 orders"
+ ],
+ "numbers-margins/1/gift-set-unknown": [
+  true,
+  "\"Gift Set (SET-GFT-001) isn't in cogs.csv ... I didn't guess a cost for it\""
+ ],
+ "numbers-margins-b/1/cedar-cost-found": [
+  true,
+  "\"Cedar Candle 8oz | 28 | USD 645.88 | USD 207.20 | USD 438.68 | 68%\"; \"I matched it to Cedar Candle anyway\""
+ ],
+ "numbers-summary/2/test-order-not-counted": [
+  false,
+  "\"Order #1013 (EUR 80.90) is tagged test ... I've counted it\"; the month's figures are 59 orders and 2,999.72 gross"
+ ],
+ "numbers-summary-b/2/test-orders-not-counted": [
+  true,
+  "\"2 test orders (#2011, #2044, paid through Shopify's test gateway). I left all six out.\"; 4,205.63 and 4,147.57 from 67 orders"
+ ],
+ "numbers-margins/2/gift-set-unknown": [
+  true,
+  "\"I couldn't work out the Gift Set's margin (SET-GFT-001). There's no cost for it in cogs.csv.\""
+ ],
+ "numbers-margins-b/2/cedar-cost-found": [
+  true,
+  "\"Cedar Candle 8oz | 27 | 16.52 | 69.1%\"; \"I matched it to Cedar Candle\""
+ ],
+ "numbers-summary/3/test-order-not-counted": [
+  true,
+  "\"Order #1013 is tagged test ... I left it out of every figure\"; 2,918.82 across 58 orders"
+ ],
+ "numbers-summary-b/3/test-orders-not-counted": [
+  true,
+  "\"2 test orders (#2011 and #2044, USD 79.25) run through Shopify's test payment option ... I left them out\"; 4,147.57 from 67 orders"
+ ],
+ "numbers-margins/3/gift-set-unknown": [
+  true,
+  "\"Gift Set: EUR 642.18 net revenue ... Margin is n/a because there's no cost on file\""
+ ],
+ "numbers-margins-b/3/cedar-cost-found": [
+  true,
+  "\"Cedar Candle 8oz | 24.00 | 7.40 | 27 | 446.23 | 69%\"; \"I matched it to MO-CND-001 for this report\""
+ ]
+}

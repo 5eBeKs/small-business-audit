@@ -1,0 +1,7 @@
+Order status,Orders,Order total incl. VAT & shipping
+Cancelled / voided,7,900.4
+Counted,1555,106722.52
+"Pre-order, not shipped",70,4778.3
+Test order,8,912.85
+ALL ORDERS IN EXPORT,1640,113314.07
+"Source: Shopify orders export (orders_export.csv), rules per store_definitions.json. Built [run date]."

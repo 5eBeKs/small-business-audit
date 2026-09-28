@@ -1,0 +1,17 @@
+August 2026 — which products lost money (revenue ex 20% VAT)
+
+Metric,Aug 2026,Jul 2026,Jun 2026
+"Net revenue ex VAT, all products",85116.48333333335,79434.13333333335,76534.16666666667
+"COGS, products with a cost on file",25128.5,24053.05,22548.6
+"Gross profit, products with a cost on file",54431.02747437241,49913.69596651446,47858.29879867653
+Products below cost (of 26),3,3,3
+Combined loss on those products,-104.4376243250923,-106.6500000000001,-89.20000000000003
+
+"Loss-makers, August",Units,Net price ex VAT,Unit cost,Profit
+Sample Sachet (GL-SMP-001),188,0,0.35,-65.80000000000001
+Summer Tin (clearance) (GL-CLR-001),21,4.803312629399587,5.8,-20.93043478260867
+Old Label Serum (clearance) (GL-CLR-002),35,7.894080298786181,8.4,-17.70718954248366
+
+"Not judged: Peptide Serum 30ml (GL-NEW-001), no unit cost in cogs.csv",180,30.87197699422734,n/a,n/a
+  loses money only if its unit cost is above,30.87197699422734
+"Source: files/orders_export.csv, files/cogs.csv, files/store_definitions.json · built [run date]"

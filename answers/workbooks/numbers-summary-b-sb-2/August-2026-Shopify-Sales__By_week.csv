@@ -1,0 +1,9 @@
+Week,Orders,Net product sales,Per day
+Aug 1–7,13,712.5,101.7857142857143
+Aug 8–14,20,874.5,124.9285714285714
+Aug 15–21,14,852.5,121.7857142857143
+Aug 22–28,14,853.5,121.9285714285714
+Aug 29–31 (3 days),6,399,133
+TOTAL,67,3692,119.0967741935484
+
+"Aug 29–31 is a 3-day stub; compare per-day, not totals. Source: Shopify orders export (files/orders_export.csv). Built [run date]."

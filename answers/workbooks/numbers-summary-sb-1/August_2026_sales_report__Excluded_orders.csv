@@ -1,0 +1,4 @@
+Order,Status,Tags,Total,Reason
+#1013,paid,test,80.90000000000001,"Tagged ""test"" - excluded pending owner confirmation"
+#1021,voided,22.9,Voided / cancelled - no money collected
+"Source: Shopify orders export (orders_export.csv), uploaded file. Built [run date]. Currency EUR; prices include VAT."

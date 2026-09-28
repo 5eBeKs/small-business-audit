@@ -1,0 +1,13 @@
+Metric,Value,Note
+Period,2026-08,"Orders created in the month, shop time"
+Orders included,67,6 orders excluded — see Exclusions tab
+Net product revenue,3644,Pre-tax line prices less discounts and refunds
+Product COGS,1277.7,Units x cost sheet
+Gross profit,2366.3
+Gross margin,0.6493688254665203
+Products losing money,1,Sample Votive
+Loss on those products,-9.9
+Shipping charged to customers,229.35,Not product revenue. Carrier cost n/a — 34 orders shipped free
+Sales tax collected,284.28,"Pass-through, excluded"
+Payment processing fees,n/a,Not in the order export
+Source: files/orders_export.csv + files/cogs.csv · built [run date]

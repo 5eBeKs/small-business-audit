@@ -1,0 +1,12 @@
+Metric,Value,Note
+Net revenue ex VAT (all products),2265.899159663866,After discounts and partial refunds
+Net revenue ex VAT (products with a cost),1623.714285714286,Excludes SKUs missing from cogs.csv
+COGS,878
+Gross profit,745.7142857142858,Products with a known cost only
+Gross margin,0.4592644729896182
+Products losing money,1,Steel Strainer
+Products with no unit cost,1,SET-GFT-001
+Orders excluded,3,#1013 (tagged 'test'); #1021 (voided / cancelled); #1042 (fully refunded)
+"Shipping collected (incl VAT, not in product revenue)",151.9,Shipping cost not in data — n/a
+Payment processing fees,n/a,Not in the export
+"Source: orders_export.csv (Shopify export), cogs.csv. Pulled [run date]."

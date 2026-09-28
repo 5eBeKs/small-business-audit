@@ -1,0 +1,16 @@
+Metric,August 2026,vs July,Note
+Orders counted,58,n/a,Excludes 1 voided and 1 test-tagged order (see Excluded orders tab)
+Gross product sales,2787.2,n/a,"Sum of line items, before discounts, VAT included"
+Discounts,-20.28,n/a,"6 orders, code WELCOME10"
+Shipping charged,151.9,n/a,27 of 58 orders shipped free
+Total order value,2918.82,n/a,
+Refunds,-70.5,n/a,"2 orders (#1042 full, #1030 partial). Refund dates are not in the export."
+Net collected (incl. VAT),2848.32,n/a,
+"VAT charged (19%, included in prices)",466,n/a,From the Taxes column
+VAT on refunds,-11.26,n/a,Calculated at 19% of refunded amounts
+Net VAT,454.74,n/a,
+Net sales excl. VAT,2393.58,n/a,
+Average order value,50.32,n/a,Total order value / orders
+Units sold,134,n/a
+Payment processor fees,n/a,n/a,Not in the orders export - pull the Shopify Payments payout report
+"Source: Shopify orders export (orders_export.csv), uploaded file. Built [run date]. Currency EUR; prices include VAT. 'vs July' is n/a because the export covers August only."

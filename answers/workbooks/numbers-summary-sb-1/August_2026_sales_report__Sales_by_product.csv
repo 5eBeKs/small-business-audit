@@ -1,0 +1,11 @@
+SKU,Product,Units,Orders,Gross revenue,Share
+SET-GFT-001,Gift Set,17,14,833,0.2988662456946039
+POT-GLS-600,Glass Teapot 600ml,19,13,646,0.2317738231917336
+TEA-BLK-100,Black Tea 100g,27,19,310.5,0.1114021239954076
+TEA-OOL-050,Oolong 50g,16,12,256,0.09184845005740529
+CUP-CER-001,Ceramic Cup,14,11,252,0.09041331802525833
+TEA-MAT-030,Matcha 30g,8,7,192,0.06888633754305397
+TEA-GRN-100,Green Tea 100g,13,10,167.7,0.0601679104477612
+STR-STL-001,Steel Strainer,20,13,130,0.04664179104477612
+TOTAL,134,2787.2,1
+"Source: Shopify orders export (orders_export.csv), uploaded file. Built [run date]. Currency EUR; prices include VAT. Revenue before discounts and refunds."

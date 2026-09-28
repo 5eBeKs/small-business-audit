@@ -1,0 +1,8 @@
+Payment method,Orders,Total order value
+PayPal Express Checkout,1,99
+Shopify Payments,57,2819.82
+Refunds
+Order,Status,Refunded,VAT in refund
+#1030,partially_refunded,10,1.6
+#1042,refunded,60.5,9.66
+"Source: Shopify orders export (orders_export.csv), uploaded file. Built [run date]. Currency EUR; prices include VAT. Refund dates are not in the export."

@@ -1,0 +1,6 @@
+Month,Units shipped,Revenue ex VAT (all SKUs),COGS (SKUs with a cost),Gross profit (SKUs with a cost),Products at a loss,Total loss on those products
+Jun 2026,4306,76574.75780777266,22548.6,47898.88993978252,3,-89.20000000000002
+Jul 2026,4616,79460.1462342489,24053.05,49939.70886743002,3,-106.65
+Aug 2026,4918,85129.32519065621,25128.5,54443.21099836196,3,-104.4376243250923
+"Source: orders_export.csv + cogs.csv (uploaded). Built [run date]. Revenue ex 20% VAT, ex shipping, net of discounts and refunds."
+Peptide Serum 30ml (GL-NEW-001) has no unit cost in cogs.csv - its revenue is in column C but it is left out of COGS and gross profit.

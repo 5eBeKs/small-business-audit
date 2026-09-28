@@ -1,0 +1,86 @@
+{
+ "case": "numbers-summary",
+ "message": "Same report as last time, please: the August export is in the files folder.",
+ "model": "claude-opus-5-5",
+ "runs": [
+  {
+   "from_run": 1,
+   "run": 1,
+   "error": null,
+   "seconds": 139,
+   "test_order_left_out": true,
+   "test_order_counted": false,
+   "read": {
+    "test_order": "left out",
+    "line": "the pattern's figures"
+   },
+   "follows_saved_rule": true
+  },
+  {
+   "from_run": 1,
+   "run": 2,
+   "error": null,
+   "seconds": 149,
+   "test_order_left_out": false,
+   "test_order_counted": false,
+   "read": {
+    "test_order": "left out",
+    "line": "\"Two orders were left out: one voided and one tagged test\"; 58 orders, EUR 2,848.32 collected"
+   },
+   "follows_saved_rule": true
+  },
+  {
+   "from_run": 1,
+   "run": 3,
+   "error": null,
+   "seconds": 114,
+   "test_order_left_out": true,
+   "test_order_counted": false,
+   "read": {
+    "test_order": "left out",
+    "line": "the pattern's figures"
+   },
+   "follows_saved_rule": true
+  },
+  {
+   "from_run": 2,
+   "run": 1,
+   "error": null,
+   "seconds": 151,
+   "test_order_left_out": false,
+   "test_order_counted": false,
+   "read": {
+    "test_order": "counted",
+    "line": "\"#1013 is tagged test ... and is counted in the totals\"; 59 orders, EUR 2,999.72"
+   },
+   "follows_saved_rule": true
+  },
+  {
+   "from_run": 2,
+   "run": 2,
+   "error": null,
+   "seconds": 157,
+   "test_order_left_out": false,
+   "test_order_counted": false,
+   "read": {
+    "test_order": "counted",
+    "line": "\"I've counted it, as the spec says\"; 59 orders, EUR 2,999.72"
+   },
+   "follows_saved_rule": true
+  },
+  {
+   "from_run": 2,
+   "run": 3,
+   "error": null,
+   "seconds": 133,
+   "test_order_left_out": false,
+   "test_order_counted": true,
+   "read": {
+    "test_order": "counted",
+    "line": "the pattern's figures"
+   },
+   "follows_saved_rule": true
+  }
+ ],
+ "read_by": "the patterns, and a reader where the patterns found neither pair of totals (the line quoted)"
+}

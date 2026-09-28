@@ -1,0 +1,223 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>August 2026 close: Store C Ltd</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- web font link removed on export -->
+<style>
+  :root {
+    --ink: #17211F;
+    --paper: #F4F3EE;
+    --paper-raised: #FFFFFF;
+    --line: #DEDCD1;
+    --accent: #0B6B5C;
+    --accent-soft: #E4EFEC;
+    --amber: #B9781F;
+    --amber-soft: #F6EBDA;
+    --good: #2E7D4F;
+    --good-soft: #E4F0E8;
+    --warn: #B9781F;
+    --warn-soft: #F6EBDA;
+    --critical: #B3392C;
+    --critical-soft: #FBEAE7;
+    --font-display: 'Zilla Slab', Georgia, 'Times New Roman', serif;
+    --font-body: 'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
+    --text-xs: 0.75rem; --text-sm: 0.875rem; --text-base: 1rem;
+    --text-lg: 1.125rem; --text-xl: 1.375rem; --text-2xl: 1.75rem; --text-3xl: 2.25rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #EDEAE2; --paper: #14201C; --paper-raised: #1B2A25; --line: #2C3A34;
+      --accent: #4FBFA5; --accent-soft: #1E332C; --amber: #E0A559; --amber-soft: #362A16;
+      --good: #6FCB94; --good-soft: #1D3226; --warn: #E0A559; --warn-soft: #362A16;
+      --critical: #E37B6B; --critical-soft: #3A211C;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #EDEAE2; --paper: #14201C; --paper-raised: #1B2A25; --line: #2C3A34;
+    --accent: #4FBFA5; --accent-soft: #1E332C; --amber: #E0A559; --amber-soft: #362A16;
+    --good: #6FCB94; --good-soft: #1D3226; --warn: #E0A559; --warn-soft: #362A16;
+    --critical: #E37B6B; --critical-soft: #3A211C;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: 1.5;
+  }
+  .page {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3rem;
+  }
+  .panel {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 1.5rem;
+  }
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .brand-mark {
+    flex: 0 0 auto;
+    width: 44px; height: 44px;
+    border-radius: 6px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font: 600 1.05rem var(--font-display);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .page-header h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--text-2xl);
+    margin: 0;
+    text-wrap: balance;
+  }
+  .page-header .meta {
+    margin: 0.15rem 0 0;
+    font-size: var(--text-sm);
+    color: var(--ink);
+    opacity: 0.65;
+  }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.25rem;
+  }
+  .stat-tile { text-align: left; }
+  .stat-figure {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: var(--text-3xl);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .stat-label {
+    margin-top: 0.35rem;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.6;
+  }
+  .stat-context {
+    margin: 0.6rem 0 0;
+    font-size: var(--text-sm);
+    color: var(--ink);
+    opacity: 0.85;
+  }
+
+  h2.section-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--text-lg);
+    margin: 0 0 0.75rem;
+  }
+
+  .status {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 3px;
+    font: 600 var(--text-xs) var(--font-body);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .status--good { background: var(--good-soft); color: var(--good); }
+  .status--warn { background: var(--warn-soft); color: var(--warn); }
+  .status--critical { background: var(--critical-soft); color: var(--critical); }
+
+  .table-scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+  th {
+    text-align: left;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--line);
+    opacity: 0.7;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--line); }
+  tr:last-child td { border-bottom: none; }
+  .num {
+    text-align: right;
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .copy-block { position: relative; }
+  .copy-block pre {
+    margin: 0;
+    background: var(--accent-soft);
+    border-radius: 6px;
+    padding: 1rem 5.5rem 1rem 1rem;
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    white-space: pre-wrap;
+    color: var(--ink);
+  }
+  .copy-btn {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    font: 600 var(--text-xs) var(--font-body);
+    background: var(--paper-raised);
+    color: var(--accent);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+  }
+  .copy-btn:hover { background: var(--accent-soft); }
+  .copy-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .checklist { display: flex; flex-direction: column; gap: 0.5rem; }
+  .checklist-progress {
+    margin: 0 0 0.5rem;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .checklist label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: var(--text-sm);
+  }
+  .checklist input[disabled] { accent-color: var(--accent); }
+
+  .page-footer {
+    text-align: center;
+    font-size: var(--text-xs);
+    color: var(--ink);
+    opacity: 0.5;
+    padding-top: 0.5rem;
+  }
+  .page-footer strong { font-weight: 600; opacity: 1; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+ .narr p{margin:0 0 .7rem} td{vertical-align:top}</style></head><body><div class="page">
+<header class="page-header"><div class="brand-mark">SC</div><div><h1>August 2026 close</h1><p class="meta">Store C Ltd · QuickBooks Online + Shopify · Prepared [run date] 2026 · GBP</p></div></header>
+<section class="panel"><h2 class="section-title">The month</h2><div class="stat-row">
+<div class="stat-tile"><div class="stat-figure">GBP 94,397</div><div class="stat-label">Revenue (corrected)</div><p class="stat-context">GBP 91,440 as booked. No prior month supplied for comparison.</p></div>
+<div class="stat-tile"><div class="stat-figure">82.2%</div><div class="stat-label">Gross margin</div><p class="stat-context">81.6% as booked. COGS is stock purchased, with no stock count.</p></div>
+<div class="stat-tile"><div class="stat-figure">GBP 73,281</div><div class="stat-label">Net income (corrected)</div><p class="stat-context">GBP 69,906 as booked. The corrected figure assumes every flag is fixed as recommended.</p></div>
+</div></section>
+<section class="panel narr"><h2 class="section-title">P&amp;L summary</h2><p><b>August closed at GBP 69,906 net profit as booked in QuickBooks. Once the Shopify errors below are fixed, it comes to GBP 73,281.</b></p><p>Revenue: Shopify paid out GBP 94,397 across 21 payouts. QuickBooks shows GBP 91,440 because the 10 Aug payout (GBP 8,613) was never recorded, the 25 Aug payout was recorded twice, the 18 Aug payout was keyed GBP 900 too high, and a GBP 2,500 transfer from savings was booked as sales. Behind those payouts were GBP 99,658 of customer charges, less GBP 2,977 of refunds (3% of charges), GBP 222 of adjustments and GBP 2,063 of Shopify fees.</p><p>Gross margin: 82% on the corrected figures (81.6% as booked). Treat that as flattering. Cost of goods is simply the GBP 16,839 of stock bought in August from Botanica Labs, Rosewater Supply and Glassjar. Without a stock count, it isn't the true cost of what was sold.</p><p>Expenses were light: GBP 4,277 after removing a courier invoice that was paid twice. Rent (GBP 1,850) and advertising (GBP 1,300) make up most of it. No payroll or VAT lines appear. No prior month was supplied, so there's no month-over-month comparison. Do you have a target to measure against?</p><p>Watch list for September: (1) match every payout to the bank, since three of August's errors were keying errors; (2) do a stock count so the margin figure means something; (3) chase the six receipts missing from QuickBooks, worth GBP 1,735.</p></section>
+<section class="panel"><h2 class="section-title">Shopify payouts vs QuickBooks deposits</h2><div class="table-scroll"><table><thead><tr><th>Date</th><th>Payout / QBO #</th><th>Ledger</th><th>Shopify</th><th>Delta</th><th>Status</th></tr></thead><tbody><tr><td>2026-08-03</td><td>PO-20260803</td><td class='num'>GBP 8,474.79</td><td class='num'>GBP 8,474.79</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-04</td><td>PO-20260804</td><td class='num'>GBP 3,025.34</td><td class='num'>GBP 3,025.34</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-05</td><td>PO-20260805</td><td class='num'>GBP 3,931.37</td><td class='num'>GBP 3,931.37</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-06</td><td>PO-20260806</td><td class='num'>GBP 2,503.51</td><td class='num'>GBP 2,503.81</td><td class='num'>GBP -0.30</td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-07</td><td>PO-20260807</td><td class='num'>GBP 3,635.44</td><td class='num'>GBP 3,635.44</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-10</td><td>PO-20260810</td><td class='num'></td><td class='num'>GBP 8,612.89</td><td class='num'></td><td><span class='status status--critical'>Missing In Ledger</span></td></tr><tr><td>2026-08-11</td><td>PO-20260811</td><td class='num'>GBP 3,431.14</td><td class='num'>GBP 3,431.14</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-12</td><td>PO-20260812</td><td class='num'>GBP 3,571.76</td><td class='num'>GBP 3,571.76</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-13</td><td>PO-20260813</td><td class='num'>GBP 3,768.25</td><td class='num'>GBP 3,768.85</td><td class='num'>GBP -0.60</td><td><span class='status status--critical'>Amount Mismatch</span></td></tr><tr><td>2026-08-14</td><td>PO-20260814</td><td class='num'>GBP 3,189.14</td><td class='num'>GBP 3,189.14</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-17</td><td>PO-20260817</td><td class='num'>GBP 8,157.35</td><td class='num'>GBP 8,157.35</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-18</td><td>PO-20260818</td><td class='num'>GBP 3,222.88</td><td class='num'>GBP 2,322.88</td><td class='num'>GBP 900.00</td><td><span class='status status--critical'>Amount Mismatch</span></td></tr><tr><td>2026-08-19</td><td>PO-20260819</td><td class='num'>GBP 3,756.41</td><td class='num'>GBP 3,756.41</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-20</td><td>PO-20260820</td><td class='num'>GBP 3,728.16</td><td class='num'>GBP 3,728.16</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-21</td><td>PO-20260821</td><td class='num'>GBP 3,385.41</td><td class='num'>GBP 3,385.41</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-24</td><td>PO-20260824</td><td class='num'>GBP 9,207.03</td><td class='num'>GBP 9,207.03</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-25</td><td>PO-20260825</td><td class='num'>GBP 2,257.17</td><td class='num'>GBP 2,257.17</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-26</td><td>PO-20260826</td><td class='num'>GBP 2,926.14</td><td class='num'>GBP 2,926.14</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-27</td><td>PO-20260827</td><td class='num'>GBP 3,180.29</td><td class='num'>GBP 3,180.29</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-28</td><td>PO-20260828</td><td class='num'>GBP 3,560.78</td><td class='num'>GBP 3,560.78</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>2026-08-31</td><td>PO-20260831</td><td class='num'>GBP 7,770.39</td><td class='num'>GBP 7,770.39</td><td class='num'></td><td><span class='status status--good'>Reconciled</span></td></tr><tr><td>08/21/2026</td><td>#1022</td><td class='num'>GBP 2,500.00</td><td class='num'></td><td class='num'>GBP 2,500.00</td><td><span class='status status--critical'>Unmatched Deposit</span></td></tr><tr><td>08/27/2026</td><td>#1017</td><td class='num'>GBP 2,257.17</td><td class='num'></td><td class='num'>GBP 2,257.17</td><td><span class='status status--critical'>Unmatched Deposit</span></td></tr></tbody></table></div></section>
+<section class="panel"><h2 class="section-title">Flagged items</h2><div class="table-scroll"><table><thead><tr><th>Type</th><th>Who / ref</th><th>Amount</th><th>What to do</th><th>Status</th></tr></thead><tbody><tr><td>Reconciliation</td><td>Shopify PO-20260810</td><td class='num'>GBP 8,612.89</td><td>Payout of GBP 8,612.89 has no deposit in QuickBooks, so revenue is understated by that amount. Record the deposit.</td><td><span class='status status--critical'>Unresolved</span></td></tr><tr><td>Duplicate</td><td>Shopify #1017</td><td class='num'>GBP 2,257.17</td><td>Deposit #1017 repeats payout PO-20260825, which is already booked as #1016 on 25 Aug, so revenue is overstated. Check the bank statement, then void #1017.</td><td><span class='status status--critical'>Unresolved</span></td></tr><tr><td>Reconciliation</td><td>Shopify (as entered) #1022</td><td class='num'>GBP 2,500.00</td><td>&#x27;Transfer from savings&#x27; is coded to Shopify Sales, so revenue is overstated. Recode to the savings/transfer account.</td><td><span class='status status--critical'>Unresolved</span></td></tr><tr><td>Reconciliation</td><td>Shopify #1011</td><td class='num'>GBP 900.00</td><td>Booked GBP 3,222.88 but Shopify paid GBP 2,322.88, so revenue is overstated by GBP 900.00. Correct the amount.</td><td><span class='status status--critical'>Unresolved</span></td></tr><tr><td>Duplicate</td><td>Northbound Couriers #1029 vs #1028</td><td class='num'>GBP 418.60</td><td>Invoice NC-8841 was paid twice (12 Aug and 14 Aug). If both payments left the bank, ask Northbound for a refund or credit. If not, void #1029.</td><td><span class='status status--critical'>Unresolved</span></td></tr><tr><td>Reconciliation</td><td>Shopify #1008</td><td class='num'>GBP 0.60</td><td>Booked GBP 3,768.25 but Shopify paid GBP 3,768.85, so revenue is understated by GBP 0.60. Correct the amount.</td><td><span class='status status--critical'>Unresolved</span></td></tr><tr><td>Needs attention</td><td>Card payment #1038</td><td class='num'>GBP 212.35</td><td>No account, payee, memo or receipt. Identify it and categorise it.</td><td><span class='status status--warn'>Unresolved</span></td></tr><tr><td>Needs attention</td><td>Market stall fee #1037</td><td class='num'>GBP 120.00</td><td>Coded to Ask My Accountant (&#x27;Summer fair&#x27;). Suggest Advertising &amp; Marketing. The payee field holds a description, not a vendor. No receipt.</td><td><span class='status status--warn'>Unresolved</span></td></tr><tr><td>Needs attention</td><td>Amazon #1036</td><td class='num'>GBP 63.48</td><td>Coded to Uncategorized Expense, with no memo and no receipt. Identify what was bought and categorise it.</td><td><span class='status status--warn'>Unresolved</span></td></tr><tr><td>Missing receipt</td><td>Meta Ads #1040</td><td class='num'>GBP 940.00</td><td>No attachment. Download the invoice from Meta Business Manager &gt; Billing.</td><td><span class='status status--warn'>Unresolved</span></td></tr><tr><td>Missing receipt</td><td>Photo Studio North #1039</td><td class='num'>GBP 360.00</td><td>No attachment. Ask the studio for the invoice.</td><td><span class='status status--warn'>Unresolved</span></td></tr><tr><td>Missing receipt</td><td>Card payment #1038</td><td class='num'>GBP 212.35</td><td>No attachment (also listed under Needs attention).</td><td><span class='status status--warn'>Unresolved</span></td></tr><tr><td>Missing receipt</td><td>Market stall fee #1037</td><td class='num'>GBP 120.00</td><td>No attachment. Get the fair organiser&#x27;s invoice or booking confirmation.</td><td><span class='status status--warn'>Unresolved</span></td></tr><tr><td>Missing receipt</td><td>Amazon #1036</td><td class='num'>GBP 63.48</td><td>No attachment. Download it from Amazon order history.</td><td><span class='status status--warn'>Unresolved</span></td></tr><tr><td>Missing receipt</td><td>Office Depot #1041</td><td class='num'>GBP 38.99</td><td>No attachment (printer ink).</td><td><span class='status status--warn'>Unresolved</span></td></tr></tbody></table></div></section>
+<section class="panel"><h2 class="section-title">Open items</h2><div class="checklist"><p class="checklist-progress">0 of 19 resolved</p><label><input type='checkbox' disabled> Reconciliation: Shopify PO-20260810 GBP 8,612.89</label><label><input type='checkbox' disabled> Duplicate: Shopify #1017 GBP 2,257.17</label><label><input type='checkbox' disabled> Reconciliation: Shopify (as entered) #1022 GBP 2,500.00</label><label><input type='checkbox' disabled> Reconciliation: Shopify #1011 GBP 900.00</label><label><input type='checkbox' disabled> Duplicate: Northbound Couriers #1029 vs #1028 GBP 418.60</label><label><input type='checkbox' disabled> Reconciliation: Shopify #1008 GBP 0.60</label><label><input type='checkbox' disabled> Needs attention: Card payment #1038 GBP 212.35</label><label><input type='checkbox' disabled> Needs attention: Market stall fee #1037 GBP 120.00</label><label><input type='checkbox' disabled> Needs attention: Amazon #1036 GBP 63.48</label><label><input type='checkbox' disabled> Missing receipt: Meta Ads #1040 GBP 940.00</label><label><input type='checkbox' disabled> Missing receipt: Photo Studio North #1039 GBP 360.00</label><label><input type='checkbox' disabled> Missing receipt: Card payment #1038 GBP 212.35</label><label><input type='checkbox' disabled> Missing receipt: Market stall fee #1037 GBP 120.00</label><label><input type='checkbox' disabled> Missing receipt: Amazon #1036 GBP 63.48</label><label><input type='checkbox' disabled> Missing receipt: Office Depot #1041 GBP 38.99</label><label><input type='checkbox' disabled> Summer fair (17 Aug): were there any stall takings outside Shopify? None are in the books.</label><label><input type='checkbox' disabled> Sales are booked at net payout, so GBP 2,062.63 of Shopify fees and GBP 2,976.75 of refunds never show on the P&amp;L. Payouts also lag orders: the 3 Aug payout includes late-July sales, and late-August sales pay out in September. Suggest booking gross sales and fees from Shopify&#x27;s sales report.</label><label><input type='checkbox' disabled> COGS is August&#x27;s stock purchases (GBP 16,838.70), with no stock count or inventory adjustment. Gross margin reflects what was bought, not the cost of what sold. Suggest a month-end stock count.</label><label><input type='checkbox' disabled> No payroll, VAT, bank-charge or tax lines appear this month. Confirm that&#x27;s expected (e.g. not VAT-registered, or the owner is paid by dividend).</label></div></section>
+<footer class="page-footer">Generated by <strong>Close Month</strong> · Small Business</footer></div></body></html>
