@@ -22,10 +22,12 @@ phrasings), and kept every answer.
 **What it does well**
 
 - **Closing August on books with 12 planted problems:** all 12 found in every run, a spreadsheet, a
-  PDF and a page each time, and its own rules kept: a 14.20 coffee not chased for a receipt (its rule
-  starts at 25), a weekly plan not called a duplicate, a 0.30 difference noted as under its 0.50
-  threshold. Plain Claude also found all 12, but with no rules to keep it asked for the coffee receipt
-  in all three runs, questioned the weekly plan in two and treated the 0.30 as an error in all three.
+  PDF and a page each time, and its receipt and duplicate rules kept in every run: a 14.20 coffee not
+  chased for a receipt (its rule starts at 25), a weekly plan not called a duplicate. Its 0.50 rule held
+  less well: a 0.30 difference was noted as under it in all three runs, but one run also said to correct
+  it, and all three put the 0.30 into the corrected figures, as plain Claude did. Plain Claude also found
+  all 12, but with no rules to keep it asked for the coffee receipt in all three runs, questioned the
+  weekly plan in two and treated the 0.30 as an error in all three.
 - **The nine owner questions of my bench, with its skill called by name:** 25 of 27 right by the
   bench's automatic checks, 26 if a refund split the owner's definitions do not settle is accepted
   (my skills 27, plain Claude 26). `report-builder` says what it counted, saves the rules it used, and,
@@ -64,8 +66,8 @@ Fixed-price, quoted per export.
 
 My own skills for these stores, on a similar bench, are in
 [claude-skills-zoo](https://github.com/5eBeKs/claude-skills-zoo): the definitions printed under the
-answer ("How this was counted") in 25 of 27 runs, 27 of 27 on the current version, and every order the
-owner should see named in 27 of 27. Contact: [Upwork](https://www.upwork.com/freelancers/ilyashkura).
+answer ("How this was counted") in 25 of 27 runs, 27 of 27 on versions 0.5.1 to 0.6.0, and every order
+the owner should see named in 27 of 27. Contact: [Upwork](https://www.upwork.com/freelancers/ilyashkura).
 
 ## What was checked
 
@@ -109,8 +111,8 @@ uncategorized lines have none either).
 
 The run with the plugin that flagged the 0.30 gave its reason: payouts do not round, so 0.30 is more
 likely a keying error than rounding. And every corrected P&L, with the plugin and without, books the
-payouts at what the bank received, 0.30 included: the threshold decides what the owner is asked
-about, not the figures. Plain Claude has no rules to keep, and each of its choices is defensible too.
+payouts at Shopify's payout amounts, 0.30 included (no bank statement was given): the threshold decides
+what the owner is asked about, not the figures. Plain Claude has no rules to keep, and each of its choices is defensible too.
 
 **The revenue line.** Every run turned the books into a corrected P&L: a pro forma the owner asked for,
 beside the ledger's own P&L (91,439.92 of sales in every run). Shopify deposits are booked net of fees
@@ -257,9 +259,11 @@ not defects, and are not counted ([`results/lint.txt`](results/lint.txt)).
 
 - [`results/`](results/): routing, the close graded against the planted problems, the bench's questions
   with every check, the reader's verdicts, the reruns, the linter and the validator.
-- [`answers/`](answers/): every answer as the owner read it, with the files each run saved:
-  `close-august/`, `bench-questions/`, `saved-definitions/`, `workbooks/` (one CSV per sheet),
-  `rerun/`, and the full routing session.
+- [`answers/`](answers/): every answer as the owner read it, with the text files the runs saved:
+  `close-august/`, `bench-questions/`, `saved-definitions/`, `workbooks/` (the bench questions'
+  spreadsheets, one CSV per sheet), `rerun/`, and the full routing session. Not published: the close
+  runs' spreadsheets and PDFs (their pages are in `packets/`), and the five definitions appended to the
+  plugin's own file through the shell, whose plugin copies were removed.
 - [`packets/`](packets/): the three close pages the plugin produced.
 - [`books/`](books/): store C's August books and what a close must find (`ledger_truth.json`); the
   stores' orders are in [claude-skills-zoo](https://github.com/5eBeKs/claude-skills-zoo/tree/main/stores).
